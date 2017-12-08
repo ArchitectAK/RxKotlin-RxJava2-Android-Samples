@@ -33,6 +33,7 @@ If you are using RxAndroid also, then add the following
 * `Map` -> transform the items emitted by an Observable by applying a function to each item
 
 ##TODO
+
 Adding more operator examples
 
 ### License
