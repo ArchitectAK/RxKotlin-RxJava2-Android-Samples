@@ -7,7 +7,7 @@ Learn RxKotlin with simple coding examples
 To allow having RxKotlin 1 and RxKotlin 2 side-by-side, RxKotlin 2 is under the maven coordinates io.reactivex.rxjava2:rxjava:2.x.y and classes are accessible below io.reactivex.
 Users switching from 1.x to 2.x have to re-organize their imports, but carefully.
 
-##Using RxKotlin 2.0 Library in your application
+## Using RxKotlin 2.0 Library in your application
 Add this in your build.gradle
 
 `compile 'io.reactivex.rxjava2:rxjava:2.1.1'`
