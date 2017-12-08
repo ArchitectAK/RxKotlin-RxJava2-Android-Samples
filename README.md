@@ -16,9 +16,9 @@ If you are using RxAndroid also, then add the following
 
 `compile 'io.reactivex.rxjava2:rxandroid:2.0.1'`
 
-#Quick Look on few changes done in RxKotlin2 over RxKotlin1
+# Quick Look on few changes done in RxKotlin2 over RxKotlin1
 
-###RxJava1 -> RxJava2
+### RxJava1 -> RxJava2
 
 * `onCompleted` -> `onComplete` - without the trailing d
 * `Func1` -> `Function`
@@ -32,7 +32,7 @@ If you are using RxAndroid also, then add the following
 # Operators :
 * `Map` -> transform the items emitted by an Observable by applying a function to each item
 
-##TODO
+## TODO
 
 Adding more operator examples
 
