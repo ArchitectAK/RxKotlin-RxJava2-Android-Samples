@@ -2,9 +2,35 @@
 
 Learn RxKotlin with simple coding examples
 
+
+# Migration from RxKotlin 1.0 to RxKotlin 2.0
+To allow having RxKotlin 1 and RxKotlin 2 side-by-side, RxKotlin 2 is under the maven coordinates io.reactivex.rxjava2:rxjava:2.x.y and classes are accessible below io.reactivex.
+Users switching from 1.x to 2.x have to re-organize their imports, but carefully.
+
+##Using RxKotlin 2.0 Library in your application
+Add this in your build.gradle
+
+`compile 'io.reactivex.rxjava2:rxjava:2.1.1'`
+
+If you are using RxAndroid also, then add the following
+
+`compile 'io.reactivex.rxjava2:rxandroid:2.0.1'`
+
+#Quick Look on few changes done in RxKotlin2 over RxKotlin1
+
+###RxJava1 -> RxJava2
+
+* `onCompleted` -> `onComplete` - without the trailing d
+* `Func1` -> `Function`
+* `Func2` -> `BiFunction`
+* `CompositeSubscription` -> `CompositeDisposable`
+* `limit` operator has been removed - Use `take` in RxKotlin2
+
+....... and so on
+
+
 # Operators :
 * `Map` -> transform the items emitted by an Observable by applying a function to each item
-
 
 ##TODO
 Adding more operator examples
