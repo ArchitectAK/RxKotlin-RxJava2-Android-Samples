@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">RxJava2Samples</string>
+    <string name="simple">Simple</string>
+    <string name="map">Map</string>
+    <string name="zip">Zip</string>
+    <string name="click_here_to_execute">Click to Execute</string>
+    <string name="operators">Operators</string>
+</resources>
