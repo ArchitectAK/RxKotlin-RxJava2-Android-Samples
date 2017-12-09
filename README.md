@@ -5,7 +5,7 @@ Learn RxKotlin with simple coding examples
 
 # Migration from RxKotlin 1.0 to RxKotlin 2.0
 
-To allow having RxKotlin 1 and RxKotlin 2 side-by-side, RxKotlin 2 is under the maven coordinates io.reactivex.rxjava2:rxjava:2.x.y and classes are accessible below io.reactivex.
+To allow having RxKotlin 1 and RxKotlin 2 side-by-side, # RxKotlin 2 is under the maven coordinates io.reactivex.rxjava2:rxjava:2.x.y and classes are accessible below io.reactivex.
 Users switching from 1.x to 2.x have to re-organize their imports, but carefully.
 
 ## Using RxKotlin 2.0 Library in your application
