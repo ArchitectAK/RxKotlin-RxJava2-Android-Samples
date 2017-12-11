@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.view.View
 import com.freeankit.rxjava2samples.R
+import com.freeankit.rxjava2samples.ui.operators.DisposableOperatorActivity
 import com.freeankit.rxjava2samples.ui.operators.MapOperatorActivity
 import com.freeankit.rxjava2samples.ui.operators.SimpleOperatorActivity
 import com.freeankit.rxjava2samples.ui.operators.ZipOperatorActivity
@@ -28,5 +29,9 @@ class OperatorsActivity : AppCompatActivity() {
 
     fun startZipActivity(view: View) {
         startActivity(Intent(this@OperatorsActivity, ZipOperatorActivity::class.java))
+    }
+
+    fun startDisposableActivity(view: View) {
+        startActivity(Intent(this@OperatorsActivity, DisposableOperatorActivity::class.java))
     }
 }

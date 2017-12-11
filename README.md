@@ -34,10 +34,17 @@ If you are using RxAndroid also, then add the following
 # Operators :
 * `Map` -> transform the items emitted by an Observable by applying a function to each item
 * `Zip` -> combine the emissions of multiple Observables together via a specified function and emit single items for each combination based on the results of this function
+* `Disposable` ->
 
 ## TODO
 
 Adding more operator examples
+
+### Contact - Let's connect to each other
+- [Twitter](https://twitter.com/KumarAnkitRKE)
+- [Github](https://github.com/AnkitDroidGit)
+- [LinkedIn](https://www.linkedin.com/in/kumarankitkumar/)
+- [Facebook](https://www.facebook.com/freeankit)
 
 ### License
 

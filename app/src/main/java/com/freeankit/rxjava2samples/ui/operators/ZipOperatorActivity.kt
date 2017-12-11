@@ -3,6 +3,7 @@ package com.freeankit.rxjava2samples.ui.operators
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.util.Log
+import android.view.View
 import com.freeankit.rxjava2samples.R
 import com.freeankit.rxjava2samples.model.User
 import com.freeankit.rxjava2samples.utils.Constant
@@ -21,7 +22,7 @@ import kotlinx.android.synthetic.main.activity_example_operator.*
 class ZipOperatorActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_map_operator)
+        setContentView(R.layout.activity_example_operator)
 
         btn.setOnClickListener({ executeZipOperator() })
     }
@@ -33,6 +34,7 @@ class ZipOperatorActivity : AppCompatActivity() {
   * Then we are finding the list of users who loves both
   */
     private fun executeZipOperator() {
+        progress.visibility = View.VISIBLE
         Observable.zip<List<User>, List<User>, List<User>>(getKotlinFansObservable(), getJavaFansObservable(),
                 BiFunction<List<User>, List<User>, List<User>> { kotlinFans, javaFans -> Utils().filterUserWhoLovesBoth(kotlinFans, javaFans) })
                 // Run on a background thread
@@ -75,18 +77,21 @@ class ZipOperatorActivity : AppCompatActivity() {
                     textView.append(Constant().LINE_SEPARATOR)
                 }
                 Log.d(Constant().TAG, " onNext : " + userList.size)
+                progress.visibility = View.GONE
             }
 
             override fun onError(e: Throwable) {
                 textView.append(" onError : " + e.message)
                 textView.append(Constant().LINE_SEPARATOR)
                 Log.d(Constant().TAG, " onError : " + e.message)
+                progress.visibility = View.GONE
             }
 
             override fun onComplete() {
                 textView.append(" onComplete")
                 textView.append(Constant().LINE_SEPARATOR)
                 Log.d(Constant().TAG, " onComplete")
+                progress.visibility = View.GONE
             }
         }
     }

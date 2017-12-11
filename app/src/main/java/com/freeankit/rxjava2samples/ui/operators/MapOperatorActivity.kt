@@ -3,6 +3,7 @@ package com.freeankit.rxjava2samples.ui.operators
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.util.Log
+import android.view.View
 import com.freeankit.rxjava2samples.R
 import com.freeankit.rxjava2samples.model.ApiUser
 import com.freeankit.rxjava2samples.model.User
@@ -13,7 +14,8 @@ import io.reactivex.Observer
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.Disposable
 import io.reactivex.schedulers.Schedulers
-import kotlinx.android.synthetic.main.activity_map_operator.*
+import kotlinx.android.synthetic.main.activity_example_operator.*
+
 
 /**
  * @author Ankit Kumar (ankitdroiddeveloper@gmail.com) on 08/12/2017 (MM/DD/YYYY )
@@ -21,7 +23,7 @@ import kotlinx.android.synthetic.main.activity_map_operator.*
 class MapOperatorActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_map_operator)
+        setContentView(R.layout.activity_example_operator)
 
         btn.setOnClickListener({ executeMapOperator() })
     }
@@ -33,6 +35,7 @@ class MapOperatorActivity : AppCompatActivity() {
       * Here we are using Map Operator to do that
       */
     private fun executeMapOperator() {
+        progress.visibility = View.VISIBLE
         getObservable()
                 // Run on a background thread
                 .subscribeOn(Schedulers.io())
@@ -67,18 +70,21 @@ class MapOperatorActivity : AppCompatActivity() {
                     textView.append(Constant().LINE_SEPARATOR)
                 }
                 Log.d(Constant().TAG, " onNext : " + userList.size)
+                progress.visibility = View.GONE
             }
 
             override fun onError(e: Throwable) {
                 textView.append(" onError : " + e.message)
                 textView.append(Constant().LINE_SEPARATOR)
                 Log.d(Constant().TAG, " onError : " + e.message)
+                progress.visibility = View.GONE
             }
 
             override fun onComplete() {
                 textView.append(" onComplete")
                 textView.append(Constant().LINE_SEPARATOR)
                 Log.d(Constant().TAG, " onComplete")
+                progress.visibility = View.GONE
             }
         }
     }

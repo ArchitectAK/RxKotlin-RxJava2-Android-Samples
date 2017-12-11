@@ -3,6 +3,7 @@ package com.freeankit.rxjava2samples.ui.operators
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.util.Log
+import android.view.View
 import com.freeankit.rxjava2samples.R
 import com.freeankit.rxjava2samples.utils.Constant
 import io.reactivex.Observable
@@ -27,6 +28,7 @@ class SimpleOperatorActivity : AppCompatActivity() {
      * simple example to emit two value one by one
      */
     private fun executeSimpleOperator() {
+        progress.visibility = View.VISIBLE
         getObservable()
                 // Run on a background thread
                 .subscribeOn(Schedulers.io())
@@ -50,18 +52,21 @@ class SimpleOperatorActivity : AppCompatActivity() {
                 textView.append(" onNext : value : " + value)
                 textView.append("\n")
                 Log.d(Constant().TAG, " onNext : value : " + value)
+                progress.visibility = View.GONE
             }
 
             override fun onError(e: Throwable) {
                 textView.append(" onError : " + e.message)
                 textView.append("\n")
                 Log.d(Constant().TAG, " onError : " + e.message)
+                progress.visibility = View.GONE
             }
 
             override fun onComplete() {
                 textView.append(" onComplete")
                 textView.append("\n\n")
                 Log.d(Constant().TAG, " onComplete")
+                progress.visibility = View.GONE
             }
         }
     }
