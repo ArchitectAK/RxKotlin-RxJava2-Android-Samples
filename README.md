@@ -20,7 +20,7 @@ If you are using RxAndroid also, then add the following
 
 # Quick Look on few changes done in RxKotlin2 over RxKotlin1
 
-### RxJava1 -> RxJava2
+### RxJava1/RxKotlin1 -> RxJava2/RxKotlin2
 
 * `onCompleted` -> `onComplete` - without the trailing d
 * `Func1` -> `Function`
