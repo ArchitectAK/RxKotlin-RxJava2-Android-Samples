@@ -44,6 +44,7 @@ Adding more operator examples
 - [Github](https://github.com/AnkitDroidGit)
 - [LinkedIn](https://www.linkedin.com/in/kumarankitkumar/)
 - [Facebook](https://www.facebook.com/freeankit)
+- [Slack](https://ankitdroid.slack.com)
 
 ### License
 
