@@ -38,7 +38,7 @@ class MapOperatorActivity : AppCompatActivity() {
                 .subscribeOn(Schedulers.io())
                 // Be notified on the main thread
                 .observeOn(AndroidSchedulers.mainThread())
-                .map { githubUser -> Utils().convertApiUserListToUserList(githubUser) }
+                .map { apiUser -> Utils().convertApiUserListToUserList(apiUser) }
                 .subscribe(getObserver())
 
     }
