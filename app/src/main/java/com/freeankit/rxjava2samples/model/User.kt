@@ -9,7 +9,7 @@ public class User() {
     var url: String = ""
     var isFollowing: Boolean = false
 
-    @JvmOverloads constructor(githubUser: GithubUser) : this() {
+    @JvmOverloads constructor(githubUser: ApiUser) : this() {
         this.id = githubUser.id
         this.login = githubUser.login
         this.url = githubUser.url

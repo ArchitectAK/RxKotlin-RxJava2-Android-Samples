@@ -4,7 +4,7 @@ import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.util.Log
 import com.freeankit.rxjava2samples.R
-import com.freeankit.rxjava2samples.model.GithubUser
+import com.freeankit.rxjava2samples.model.ApiUser
 import com.freeankit.rxjava2samples.model.User
 import com.freeankit.rxjava2samples.utils.Constant
 import com.freeankit.rxjava2samples.utils.Utils
@@ -26,19 +26,25 @@ class MapOperatorActivity : AppCompatActivity() {
         btn.setOnClickListener({ executeMapOperator() })
     }
 
+    /*
+      * Here we are getting ApiUser Object from api server
+      * then we are converting it into User Object because
+      * may be our database support User Not ApiUser Object
+      * Here we are using Map Operator to do that
+      */
     private fun executeMapOperator() {
         getObservable()
                 // Run on a background thread
                 .subscribeOn(Schedulers.io())
                 // Be notified on the main thread
                 .observeOn(AndroidSchedulers.mainThread())
-                .map { apiUsers -> Utils().convertApiUserListToUserList(apiUsers) }
+                .map { githubUser -> Utils().convertApiUserListToUserList(githubUser) }
                 .subscribe(getObserver())
 
     }
 
-    private fun getObservable(): Observable<List<GithubUser>> {
-        return Observable.create<List<GithubUser>> { e ->
+    private fun getObservable(): Observable<List<ApiUser>> {
+        return Observable.create<List<ApiUser>> { e ->
             if (!e.isDisposed) {
                 e.onNext(Utils().getApiUserList())
                 e.onComplete()

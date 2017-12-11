@@ -19,6 +19,7 @@
         <activity android:name=".ui.OperatorsActivity" />
         <activity android:name=".ui.operators.SimpleOperatorActivity" />
         <activity android:name=".ui.operators.MapOperatorActivity" />
+        <activity android:name=".ui.operators.ZipOperatorActivity" />
     </application>
 
 </manifest>
