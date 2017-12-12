@@ -21,6 +21,7 @@
         <activity android:name=".ui.operators.MapOperatorActivity" />
         <activity android:name=".ui.operators.ZipOperatorActivity" />
         <activity android:name=".ui.operators.DisposableOperatorActivity" />
+        <activity android:name=".ui.operators.TakeOperatorActivity" />
     </application>
 
 </manifest>
