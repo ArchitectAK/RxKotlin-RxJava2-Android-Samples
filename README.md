@@ -34,6 +34,7 @@ If you are using RxAndroid also, then add the following
 # Operators :
 * `Map` -> transform the items emitted by an Observable by applying a function to each item
 * `Zip` -> combine the emissions of multiple Observables together via a specified function and emit single items for each combination based on the results of this function
+* `Take` -> Emit only the first n items emitted by an Observable
 
 ## TODO
 
