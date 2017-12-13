@@ -36,6 +36,7 @@ If you are using RxAndroid also, then add the following
 * `Zip` -> Combine the emissions of multiple Observables together via a specified function and emit single items for each combination based on the results of this function
 * `Take` -> Emit only the first n items emitted by an Observable
 * `Timer` -> Create an Observable that emits a particular item after a given delay
+* `FlatMap` -> Transform the items emitted by an Observable into Observables, then flatten the emissions from those into a single Observable
 
 ## TODO
 
