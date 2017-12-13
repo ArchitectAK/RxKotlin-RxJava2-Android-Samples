@@ -10,7 +10,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical">
 
         <Button
@@ -39,6 +39,13 @@
             android:layout_height="wrap_content"
             android:onClick="startDisposableActivity"
             android:text="@string/disposable"
+            android:textColor="@android:color/black" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="startFlatMapActivity"
+            android:text="@string/flatmap"
             android:textColor="@android:color/black" />
 
     </LinearLayout>

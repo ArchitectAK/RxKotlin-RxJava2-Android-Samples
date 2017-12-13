@@ -39,5 +39,8 @@ class OperatorsActivity : AppCompatActivity() {
     fun startTimerActivity(view: View) {
         startActivity(Intent(this@OperatorsActivity, TimerOperatorActivity::class.java))
     }
+    fun startFlatMapActivity(view: View) {
+        startActivity(Intent(this@OperatorsActivity, FlatMapOperatorActivity::class.java))
+    }
 
 }

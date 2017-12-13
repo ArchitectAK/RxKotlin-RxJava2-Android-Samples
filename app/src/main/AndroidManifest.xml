@@ -23,6 +23,7 @@
         <activity android:name=".ui.operators.DisposableOperatorActivity" />
         <activity android:name=".ui.operators.TakeOperatorActivity" />
         <activity android:name=".ui.operators.TimerOperatorActivity" />
+        <activity android:name=".ui.operators.FlatMapOperatorActivity" />
     </application>
 
 </manifest>

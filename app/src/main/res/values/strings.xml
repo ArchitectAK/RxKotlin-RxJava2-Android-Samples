@@ -6,4 +6,5 @@
     <string name="click_here_to_execute">Click to Execute</string>
     <string name="operators">Operators</string>
     <string name="disposable">Disposable</string>
+    <string name="flatmap">FlatMap</string>
 </resources>
