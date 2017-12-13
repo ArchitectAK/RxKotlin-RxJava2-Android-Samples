@@ -22,6 +22,7 @@
         <activity android:name=".ui.operators.ZipOperatorActivity" />
         <activity android:name=".ui.operators.DisposableOperatorActivity" />
         <activity android:name=".ui.operators.TakeOperatorActivity" />
+        <activity android:name=".ui.operators.TimerOperatorActivity" />
     </application>
 
 </manifest>

@@ -35,4 +35,9 @@ class OperatorsActivity : AppCompatActivity() {
     fun startTakeActivity(view: View) {
         startActivity(Intent(this@OperatorsActivity, TakeOperatorActivity::class.java))
     }
+
+    fun startTimerActivity(view: View) {
+        startActivity(Intent(this@OperatorsActivity, TimerOperatorActivity::class.java))
+    }
+
 }
