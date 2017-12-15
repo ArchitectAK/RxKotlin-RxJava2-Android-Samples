@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">RxJava2Samples</string>
+    <string name="app_name">RxKotlin2Samples</string>
     <string name="simple">Simple</string>
     <string name="map">Map</string>
     <string name="zip">Zip</string>
