@@ -7,4 +7,5 @@
     <string name="operators">Operators</string>
     <string name="disposable">Disposable</string>
     <string name="flatmap">FlatMap</string>
+    <string name="interval">Interval</string>
 </resources>

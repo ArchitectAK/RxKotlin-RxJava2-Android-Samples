@@ -48,5 +48,12 @@
             android:text="@string/flatmap"
             android:textColor="@android:color/black" />
 
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="startIntervalActivity"
+            android:text="@string/interval"
+            android:textColor="@android:color/black" />
+
     </LinearLayout>
 </ScrollView>

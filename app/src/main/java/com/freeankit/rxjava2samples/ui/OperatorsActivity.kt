@@ -43,4 +43,8 @@ class OperatorsActivity : AppCompatActivity() {
         startActivity(Intent(this@OperatorsActivity, FlatMapOperatorActivity::class.java))
     }
 
+    fun startIntervalActivity(view: View) {
+        startActivity(Intent(this@OperatorsActivity, IntervalOperatorActivity::class.java))
+    }
+
 }
