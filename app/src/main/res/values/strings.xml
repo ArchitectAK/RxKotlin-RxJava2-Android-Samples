@@ -9,4 +9,5 @@
     <string name="flatmap">FlatMap</string>
     <string name="interval">Interval</string>
     <string name="take">Take</string>
+    <string name="timer">Timer</string>
 </resources>
