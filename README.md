@@ -30,7 +30,6 @@ If you are using RxAndroid also, then add the following
 
 ....... and so on
 
-
 # Operators :
 * `Map` -> Transform the items emitted by an Observable by applying a function to each item
 * `Zip` -> Combine the emissions of multiple Observables together via a specified function and emit single items for each combination based on the results of this function
