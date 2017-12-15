@@ -8,4 +8,5 @@
     <string name="disposable">Disposable</string>
     <string name="flatmap">FlatMap</string>
     <string name="interval">Interval</string>
+    <string name="take">Take</string>
 </resources>
