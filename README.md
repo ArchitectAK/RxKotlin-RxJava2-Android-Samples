@@ -37,6 +37,7 @@ If you are using RxAndroid also, then add the following
 * `Take` -> Emit only the first n items emitted by an Observable
 * `Timer` -> Create an Observable that emits a particular item after a given delay
 * `FlatMap` -> Transform the items emitted by an Observable into Observables, then flatten the emissions from those into a single Observable
+* `Interval` -> Create an Observable that emits a sequence of integers spaced by a given time interval
 
 ## TODO
 
