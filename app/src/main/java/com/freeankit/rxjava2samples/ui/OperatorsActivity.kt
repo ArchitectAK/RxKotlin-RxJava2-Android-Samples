@@ -46,5 +46,8 @@ class OperatorsActivity : AppCompatActivity() {
     fun startIntervalActivity(view: View) {
         startActivity(Intent(this@OperatorsActivity, IntervalOperatorActivity::class.java))
     }
+    fun startDebounceActivity(view: View) {
+        startActivity(Intent(this@OperatorsActivity, DebounceOperatorActivity::class.java))
+    }
 
 }

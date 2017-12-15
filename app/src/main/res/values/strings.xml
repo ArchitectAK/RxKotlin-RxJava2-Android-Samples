@@ -10,4 +10,5 @@
     <string name="interval">Interval</string>
     <string name="take">Take</string>
     <string name="timer">Timer</string>
+    <string name="debounce">Debounce</string>
 </resources>
