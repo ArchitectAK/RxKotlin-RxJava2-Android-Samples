@@ -37,6 +37,7 @@ If you are using RxAndroid also, then add the following
 * `Timer` -> Create an Observable that emits a particular item after a given delay
 * `FlatMap` -> Transform the items emitted by an Observable into Observables, then flatten the emissions from those into a single Observable
 * `Interval` -> Create an Observable that emits a sequence of integers spaced by a given time interval
+* `Debounce` -> Only emit an item from an Observable if a particular timespan has passed without it emitting another item
 
 ## TODO
 
