@@ -50,4 +50,8 @@ class OperatorsActivity : AppCompatActivity() {
         startActivity(Intent(this@OperatorsActivity, DebounceOperatorActivity::class.java))
     }
 
+    fun startSingleObserverActivity(view: View) {
+        startActivity(Intent(this@OperatorsActivity, SingleObserverOperatorActivity::class.java))
+    }
+
 }
