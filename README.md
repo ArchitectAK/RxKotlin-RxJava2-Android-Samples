@@ -38,7 +38,7 @@ If you are using RxAndroid also, then add the following
 * `FlatMap` -> Transform the items emitted by an Observable into Observables, then flatten the emissions from those into a single Observable
 * `Interval` -> Create an Observable that emits a sequence of integers spaced by a given time interval
 * `Debounce` -> Only emit an item from an Observable if a particular time span has passed without it emitting another item
-* `Single Observer` -> 
+* `Single Observer` -> A Single is something like an Observable, but instead of emitting a series of values — anywhere from none at all to an infinite number — it always either emits one value or an error notification.
 
 ## TODO
 
