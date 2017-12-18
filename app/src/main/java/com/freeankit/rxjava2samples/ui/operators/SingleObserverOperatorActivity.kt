@@ -21,6 +21,9 @@ class SingleObserverOperatorActivity : AppCompatActivity() {
         btn.setOnClickListener({ executeSingleObserverOperator() })
     }
 
+    /*
+ * simple example using SingleObserver
+ */
     private fun executeSingleObserverOperator() {
         Single.just("Ankit")
                 .subscribe(getSingleObserver())

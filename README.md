@@ -37,11 +37,25 @@ If you are using RxAndroid also, then add the following
 * `Timer` -> Create an Observable that emits a particular item after a given delay
 * `FlatMap` -> Transform the items emitted by an Observable into Observables, then flatten the emissions from those into a single Observable
 * `Interval` -> Create an Observable that emits a sequence of integers spaced by a given time interval
-* `Debounce` -> Only emit an item from an Observable if a particular timespan has passed without it emitting another item
+* `Debounce` -> Only emit an item from an Observable if a particular time span has passed without it emitting another item
+* `Single Observer` -> 
 
 ## TODO
 
 Adding more operator examples
+
+## Highlights :
+* [SimpleOperatorActivity](https://github.com/AnkitDroidGit/RxJava-RxKotlin-Android-Samples/blob/master/app/src/main/java/com/freeankit/rxjava2samples/ui/operators/SimpleOperatorActivity.kt) - Using `Simple` operator
+* [MapOperatorActivity](https://github.com/AnkitDroidGit/RxJava-RxKotlin-Android-Samples/blob/master/app/src/main/java/com/freeankit/rxjava2samples/ui/operators/MapOperatorActivity.kt) - Using `Map` operator
+* [ZipOperatorActivity](https://github.com/AnkitDroidGit/RxJava-RxKotlin-Android-Samples/blob/master/app/src/main/java/com/freeankit/rxjava2samples/ui/operators/ZipOperatorActivity.kt) - Using `Zip` observer
+* [DisposableOperatorActivity](https://github.com/AnkitDroidGit/RxJava-RxKotlin-Android-Samples/blob/master/app/src/main/java/com/freeankit/rxjava2samples/ui/operators/DisposableOperatorActivity.kt) - Using `Disposable` operator
+* [FlatMapOperatorActivity](https://github.com/AnkitDroidGit/RxJava-RxKotlin-Android-Samples/blob/master/app/src/main/java/com/freeankit/rxjava2samples/ui/operators/FlatMapOperatorActivity.kt) - Using `FlatMap` Operator
+* [IntervalOperatorActivity](https://github.com/AnkitDroidGit/RxJava-RxKotlin-Android-Samples/blob/master/app/src/main/java/com/freeankit/rxjava2samples/ui/operators/IntervalOperatorActivity.kt) - Using `interval` Operator
+* [TakeOperatorActivity](https://github.com/AnkitDroidGit/RxJava-RxKotlin-Android-Samples/blob/master/app/src/main/java/com/freeankit/rxjava2samples/ui/operators/TakeOperatorActivity.kt) - Using `Take` Operator
+* [TimerOperatorActivity](https://github.com/AnkitDroidGit/RxJava-RxKotlin-Android-Samples/blob/master/app/src/main/java/com/freeankit/rxjava2samples/ui/operators/TimerOperatorActivity.kt) - Using `Timer` Operator
+* [DebounceOperatorActivity](https://github.com/AnkitDroidGit/RxJava-RxKotlin-Android-Samples/blob/master/app/src/main/java/com/freeankit/rxjava2samples/ui/operators/DebounceOperatorActivity.kt) - Using `Debounce` Operator
+* [SingleObserverOperatorActivity](https://github.com/AnkitDroidGit/RxJava-RxKotlin-Android-Samples/blob/master/app/src/main/java/com/freeankit/rxjava2samples/ui/operators/SingleObserverOperatorActivity.kt) - Using `Single Observer` Operator
+* Coming More
 
 ### Contact - Let's connect to each other
 - [Twitter](https://twitter.com/KumarAnkitRKE)
