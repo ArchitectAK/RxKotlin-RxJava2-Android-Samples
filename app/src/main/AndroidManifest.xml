@@ -27,6 +27,7 @@
         <activity android:name=".ui.operators.IntervalOperatorActivity" />
         <activity android:name=".ui.operators.DebounceOperatorActivity" />
         <activity android:name=".ui.operators.SingleObserverOperatorActivity" />
+        <activity android:name=".ui.operators.CompletableObserverOperatorActivity" />
     </application>
 
 </manifest>
