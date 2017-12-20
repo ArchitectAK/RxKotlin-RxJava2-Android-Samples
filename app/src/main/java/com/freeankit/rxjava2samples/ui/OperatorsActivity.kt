@@ -57,4 +57,8 @@ class OperatorsActivity : AppCompatActivity() {
     fun startCompletableObserverActivity(view: View) {
         startActivity(Intent(this@OperatorsActivity, CompletableObserverOperatorActivity::class.java))
     }
+
+    fun startFlowableActivity(view: View) {
+        startActivity(Intent(this@OperatorsActivity, FlowableOperatorActivity::class.java))
+    }
 }
