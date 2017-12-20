@@ -21,6 +21,9 @@ class FlowableOperatorActivity : AppCompatActivity() {
         btn.setOnClickListener({ executeFlowableOperator() })
     }
 
+    /*
+   * simple example using Flowable
+   */
     private fun executeFlowableOperator() {
 
         val observable = Flowable.just(1, 2, 3, 4)
