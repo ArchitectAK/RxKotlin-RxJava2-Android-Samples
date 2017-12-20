@@ -83,5 +83,18 @@
             android:text="@string/single"
             android:textColor="@android:color/black" />
 
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="startCompletableObserverActivity"
+            android:text="@string/CompletableObserver"
+            android:textColor="@android:color/black" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="startFlowableActivity"
+            android:text="@string/flowable"
+            android:textColor="@android:color/black" />
     </LinearLayout>
 </ScrollView>
