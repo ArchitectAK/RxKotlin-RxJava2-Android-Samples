@@ -36,6 +36,8 @@ class CompletableObserverOperatorActivity : AppCompatActivity() {
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(getCompletableObserver())
 
+
+
     }
 
     private fun getCompletableObserver(): CompletableObserver {
