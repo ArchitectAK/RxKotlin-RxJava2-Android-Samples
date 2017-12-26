@@ -14,4 +14,5 @@
     <string name="single">Single Observer</string>
     <string name="CompletableObserver">Completable Observer</string>
     <string name="flowable">Flowable</string>
+    <string name="reduce">Reduce</string>
 </resources>
