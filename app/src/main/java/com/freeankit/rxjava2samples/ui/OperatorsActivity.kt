@@ -61,4 +61,8 @@ class OperatorsActivity : AppCompatActivity() {
     fun startFlowableActivity(view: View) {
         startActivity(Intent(this@OperatorsActivity, FlowableOperatorActivity::class.java))
     }
+
+    fun startReduceActivity(view: View) {
+        startActivity(Intent(this@OperatorsActivity, ReduceOperatorActivity::class.java))
+    }
 }

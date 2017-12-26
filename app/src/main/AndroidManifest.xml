@@ -29,6 +29,7 @@
         <activity android:name=".ui.operators.SingleObserverOperatorActivity" />
         <activity android:name=".ui.operators.CompletableObserverOperatorActivity" />
         <activity android:name=".ui.operators.FlowableOperatorActivity" />
+        <activity android:name=".ui.operators.ReduceOperatorActivity" />
     </application>
 
 </manifest>
