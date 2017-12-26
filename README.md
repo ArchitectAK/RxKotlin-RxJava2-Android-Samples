@@ -39,6 +39,7 @@ If you are using RxAndroid also, then add the following
 * `Interval` -> Create an Observable that emits a sequence of integers spaced by a given time interval
 * `Debounce` -> Only emit an item from an Observable if a particular time span has passed without it emitting another item
 * `Single Observer` -> A Single is something like an Observable, but instead of emitting a series of values — anywhere from none at all to an infinite number — it always either emits one value or an error notification.
+* `Reduce` -> Apply a function to each item emitted by an Observable, sequentially, and emit the final value
 
 ## TODO
 
