@@ -56,6 +56,8 @@ Adding more operator examples
 * [TimerOperatorActivity](https://github.com/AnkitDroidGit/RxJava-RxKotlin-Android-Samples/blob/master/app/src/main/java/com/freeankit/rxjava2samples/ui/operators/TimerOperatorActivity.kt) - Using `Timer` Operator
 * [DebounceOperatorActivity](https://github.com/AnkitDroidGit/RxJava-RxKotlin-Android-Samples/blob/master/app/src/main/java/com/freeankit/rxjava2samples/ui/operators/DebounceOperatorActivity.kt) - Using `Debounce` Operator
 * [SingleObserverOperatorActivity](https://github.com/AnkitDroidGit/RxJava-RxKotlin-Android-Samples/blob/master/app/src/main/java/com/freeankit/rxjava2samples/ui/operators/SingleObserverOperatorActivity.kt) - Using `Single Observer` Operator
+* [FlowableOperatorActivity](https://github.com/AnkitDroidGit/RxJava-RxKotlin-Android-Samples/blob/master/app/src/main/java/com/freeankit/rxjava2samples/ui/operators/FlowableOperatorActivity.kt) - Using `Flowable`
+* [ReduceOperatorActivity](https://github.com/AnkitDroidGit/RxJava-RxKotlin-Android-Samples/blob/master/app/src/main/java/com/freeankit/rxjava2samples/ui/operators/ReduceOperatorActivity.kt) -Using `Reduce` Operator 
 * Coming More
 
 ### Contact - Let's connect to each other
