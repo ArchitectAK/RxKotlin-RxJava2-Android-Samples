@@ -30,6 +30,7 @@
         <activity android:name=".ui.operators.CompletableObserverOperatorActivity" />
         <activity android:name=".ui.operators.FlowableOperatorActivity" />
         <activity android:name=".ui.operators.ReduceOperatorActivity" />
+        <activity android:name=".ui.operators.BufferOperatorActivity" />
     </application>
 
 </manifest>
