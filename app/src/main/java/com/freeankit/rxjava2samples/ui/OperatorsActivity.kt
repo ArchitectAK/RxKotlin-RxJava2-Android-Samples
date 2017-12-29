@@ -65,4 +65,9 @@ class OperatorsActivity : AppCompatActivity() {
     fun startReduceActivity(view: View) {
         startActivity(Intent(this@OperatorsActivity, ReduceOperatorActivity::class.java))
     }
+
+    fun startBufferActivity(view: View) {
+        startActivity(Intent(this@OperatorsActivity, BufferOperatorActivity::class.java))
+    }
+
 }
