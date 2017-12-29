@@ -40,6 +40,7 @@ If you are using RxAndroid also, then add the following
 * `Debounce` -> Only emit an item from an Observable if a particular time span has passed without it emitting another item
 * `Single Observer` -> A Single is something like an Observable, but instead of emitting a series of values — anywhere from none at all to an infinite number — it always either emits one value or an error notification.
 * `Reduce` -> Apply a function to each item emitted by an Observable, sequentially, and emit the final value
+* `Buffer` -> periodically gather items emitted by an Observable into bundles and emit these bundles rather than emitting the items one at a time
 
 ## TODO
 
