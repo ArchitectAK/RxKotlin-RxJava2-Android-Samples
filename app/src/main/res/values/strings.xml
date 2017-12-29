@@ -15,4 +15,5 @@
     <string name="CompletableObserver">Completable Observer</string>
     <string name="flowable">Flowable</string>
     <string name="reduce">Reduce</string>
+    <string name="buffer">Buffer</string>
 </resources>
