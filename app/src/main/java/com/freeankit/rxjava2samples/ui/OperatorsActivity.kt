@@ -70,4 +70,7 @@ class OperatorsActivity : AppCompatActivity() {
         startActivity(Intent(this@OperatorsActivity, BufferOperatorActivity::class.java))
     }
 
+    fun startFilterActivity(view: View) {
+        startActivity(Intent(this@OperatorsActivity, FilterOperatorActivity::class.java))
+    }
 }
