@@ -31,6 +31,7 @@
         <activity android:name=".ui.operators.FlowableOperatorActivity" />
         <activity android:name=".ui.operators.ReduceOperatorActivity" />
         <activity android:name=".ui.operators.BufferOperatorActivity" />
+        <activity android:name=".ui.operators.FilterOperatorActivity" />
     </application>
 
 </manifest>
