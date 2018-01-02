@@ -8,7 +8,6 @@ import com.freeankit.rxjava2samples.utils.Constant
 import io.reactivex.Observable
 import io.reactivex.Observer
 import io.reactivex.disposables.Disposable
-import io.reactivex.functions.Predicate
 import kotlinx.android.synthetic.main.activity_example_operator.*
 
 /**
