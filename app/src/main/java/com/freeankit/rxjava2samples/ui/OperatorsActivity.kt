@@ -73,4 +73,8 @@ class OperatorsActivity : AppCompatActivity() {
     fun startFilterActivity(view: View) {
         startActivity(Intent(this@OperatorsActivity, FilterOperatorActivity::class.java))
     }
+
+    fun startSkipActivity(view: View) {
+        startActivity(Intent(this@OperatorsActivity, SkipOperatorActivity::class.java))
+    }
 }
