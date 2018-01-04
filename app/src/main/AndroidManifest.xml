@@ -32,6 +32,7 @@
         <activity android:name=".ui.operators.ReduceOperatorActivity" />
         <activity android:name=".ui.operators.BufferOperatorActivity" />
         <activity android:name=".ui.operators.FilterOperatorActivity" />
+        <activity android:name=".ui.operators.SkipOperatorActivity" />
     </application>
 
 </manifest>
