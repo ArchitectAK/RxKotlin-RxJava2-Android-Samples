@@ -77,4 +77,8 @@ class OperatorsActivity : AppCompatActivity() {
     fun startSkipActivity(view: View) {
         startActivity(Intent(this@OperatorsActivity, SkipOperatorActivity::class.java))
     }
+
+    fun startScanActivity(view: View) {
+        startActivity(Intent(this@OperatorsActivity, ScanOperatorActivity::class.java))
+    }
 }
