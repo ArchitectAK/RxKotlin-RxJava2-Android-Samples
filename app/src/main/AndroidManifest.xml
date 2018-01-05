@@ -33,6 +33,7 @@
         <activity android:name=".ui.operators.BufferOperatorActivity" />
         <activity android:name=".ui.operators.FilterOperatorActivity" />
         <activity android:name=".ui.operators.SkipOperatorActivity" />
+        <activity android:name=".ui.operators.ScanOperatorActivity" />
     </application>
 
 </manifest>
