@@ -81,4 +81,8 @@ class OperatorsActivity : AppCompatActivity() {
     fun startScanActivity(view: View) {
         startActivity(Intent(this@OperatorsActivity, ScanOperatorActivity::class.java))
     }
+
+    fun startReplayActivity(view: View) {
+        startActivity(Intent(this@OperatorsActivity, ReplayOperatorActivity::class.java))
+    }
 }
