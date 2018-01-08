@@ -44,6 +44,7 @@ If you are using RxAndroid also, then add the following
 * `Filter` -> Emit only those items from an Observable that pass a predicate test
 * `Skip` -> Suppress the first n items emitted by an Observable
 * `Sacn` -> Apply a function to each item emitted by an Observable, sequentially, and emit each successive value
+* `Replay` -> Ensure that all observers see the same sequence of emitted items, even if they subscribe after the Observable has begun emitting items
 
 ## TODO
 
@@ -65,7 +66,9 @@ Adding more operator examples
 * [BufferOperatorActivity](https://github.com/AnkitDroidGit/RxJava-RxKotlin-Android-Samples/blob/master/app/src/main/java/com/freeankit/rxjava2samples/ui/operators/BufferOperatorActivity.kt) -Using `Buffer` Operator 
 * [FilterOperatorActivity](https://github.com/AnkitDroidGit/RxJava-RxKotlin-Android-Samples/blob/master/app/src/main/java/com/freeankit/rxjava2samples/ui/operators/FilterOperatorActivity.kt) -Using `Filter` Operator 
 * [SkipOperatorActivity](https://github.com/AnkitDroidGit/RxJava-RxKotlin-Android-Samples/blob/master/app/src/main/java/com/freeankit/rxjava2samples/ui/operators/SkipOperatorActivity.kt) -Using `Skip` Operator 
-* [ScanOperatorActivity](https://github.com/AnkitDroidGit/RxJava-RxKotlin-Android-Samples/blob/master/app/src/main/java/com/freeankit/rxjava2samples/ui/operators/ScanOperatorActivity.kt) -Using `Scan` Operator 
+* [ScanOperatorActivity](https://github.com/AnkitDroidGit/RxJava-RxKotlin-Android-Samples/blob/master/app/src/main/java/com/freeankit/rxjava2samples/ui/operators/ScanOperatorActivity.kt) -Using `Scan` Operator
+* [ScanOperatorActivity](https://github.com/AnkitDroidGit/RxJava-RxKotlin-Android-Samples/blob/master/app/src/main/java/com/freeankit/rxjava2samples/ui/operators/ScanOperatorActivity.kt) -Using `Scan` Operator
+ 
 * Coming More
 
 ### Contact - Let's connect to each other
