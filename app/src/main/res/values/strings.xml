@@ -19,4 +19,5 @@
     <string name="filter">Filter</string>
     <string name="skip">Skip</string>
     <string name="scan">Scan</string>
+    <string name="replay">Replay</string>
 </resources>
