@@ -34,6 +34,7 @@
         <activity android:name=".ui.operators.FilterOperatorActivity" />
         <activity android:name=".ui.operators.SkipOperatorActivity" />
         <activity android:name=".ui.operators.ScanOperatorActivity" />
+        <activity android:name=".ui.operators.ReplayOperatorActivity" />
     </application>
 
 </manifest>
