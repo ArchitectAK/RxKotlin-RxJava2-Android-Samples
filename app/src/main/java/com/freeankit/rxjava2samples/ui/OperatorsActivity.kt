@@ -85,4 +85,9 @@ class OperatorsActivity : AppCompatActivity() {
     fun startReplayActivity(view: View) {
         startActivity(Intent(this@OperatorsActivity, ReplayOperatorActivity::class.java))
     }
+
+    fun startConcatActivity(view: View) {
+        startActivity(Intent(this@OperatorsActivity, ConcatOperatorActivity::class.java))
+    }
+
 }
