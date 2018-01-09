@@ -13,10 +13,10 @@ class ConcatOperatorActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_example_operator)
 
-        btn.setOnClickListener({ executeCancatOperator() })
+        btn.setOnClickListener({ executeConcatOperator() })
     }
 
-    private fun executeCancatOperator() {
+    private fun executeConcatOperator() {
 
 
     }
