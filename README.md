@@ -45,7 +45,9 @@ If you are using RxAndroid also, then add the following
 * `Skip` -> Suppress the first n items emitted by an Observable
 * `Sacn` -> Apply a function to each item emitted by an Observable, sequentially, and emit each successive value
 * `Replay` -> Ensure that all observers see the same sequence of emitted items, even if they subscribe after the Observable has begun emitting items
+* `Concat` -> Emit the emissions from two or more Observables without interleaving them
 
+* Coming More
 ## TODO
 
 Adding more operator examples
