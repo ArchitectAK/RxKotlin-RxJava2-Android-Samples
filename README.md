@@ -46,6 +46,7 @@ If you are using RxAndroid also, then add the following
 * `Sacn` -> Apply a function to each item emitted by an Observable, sequentially, and emit each successive value
 * `Replay` -> Ensure that all observers see the same sequence of emitted items, even if they subscribe after the Observable has begun emitting items
 * `Concat` -> Emit the emissions from two or more Observables without interleaving them
+* `Merge` -> Combine multiple Observables into one by merging their emissions
 
 * Coming More
 ## TODO
@@ -71,6 +72,7 @@ Adding more operator examples
 * [ScanOperatorActivity](https://github.com/AnkitDroidGit/RxJava-RxKotlin-Android-Samples/blob/master/app/src/main/java/com/freeankit/rxjava2samples/ui/operators/ScanOperatorActivity.kt) -Using `Scan` Operator
 * [ReplayOperatorActivity](https://github.com/AnkitDroidGit/RxJava-RxKotlin-Android-Samples/blob/master/app/src/main/java/com/freeankit/rxjava2samples/ui/operators/ReplayOperatorActivity.kt) -Using `Replay` Operator
 * [ConcatOperatorActivity](https://github.com/AnkitDroidGit/RxJava-RxKotlin-Android-Samples/blob/master/app/src/main/java/com/freeankit/rxjava2samples/ui/operators/ConcatOperatorActivity.kt) -Using `Concat` Operator
+* [MergeOperatorActivity](https://github.com/AnkitDroidGit/RxJava-RxKotlin-Android-Samples/blob/master/app/src/main/java/com/freeankit/rxjava2samples/ui/operators/MergeOperatorActivity.kt) -Using `Merge` Operator
  
 * Coming More
 
