@@ -90,4 +90,7 @@ class OperatorsActivity : AppCompatActivity() {
         startActivity(Intent(this@OperatorsActivity, ConcatOperatorActivity::class.java))
     }
 
+    fun startMergeActivity(view: View) {
+        startActivity(Intent(this@OperatorsActivity, MergeOperatorActivity::class.java))
+    }
 }

@@ -36,6 +36,7 @@
         <activity android:name=".ui.operators.ScanOperatorActivity" />
         <activity android:name=".ui.operators.ReplayOperatorActivity" />
         <activity android:name=".ui.operators.ConcatOperatorActivity" />
+        <activity android:name=".ui.operators.MergeOperatorActivity" />
     </application>
 
 </manifest>
