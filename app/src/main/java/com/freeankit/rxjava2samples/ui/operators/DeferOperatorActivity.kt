@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.util.Log
 import com.freeankit.rxjava2samples.R
+import com.freeankit.rxjava2samples.model.Bike
 import com.freeankit.rxjava2samples.utils.Constant
 import io.reactivex.Observer
 import io.reactivex.disposables.Disposable
@@ -25,11 +26,11 @@ class DeferOperatorActivity : AppCompatActivity() {
    * Defer used for Deferring Observable code until subscription in RxJava
    */
     private fun executeDeferOperator() {
-        val car = Car()
+        val bike = Bike()
 
-        val brandDeferObservable = car.brandDeferObservable()
+        val brandDeferObservable = bike.brandDeferObservable()
 
-        car.setBrand("BMW")  // Even if we are setting the brand after creating Observable
+        bike.setBrand("Harley Davidson")  // Even if we are setting the brand after creating Observable
         // we will get the brand as BMW.
         // If we had not used defer, we would have got null as the brand.
 
