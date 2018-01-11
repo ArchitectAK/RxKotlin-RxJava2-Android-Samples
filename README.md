@@ -47,6 +47,7 @@ If you are using RxAndroid also, then add the following
 * `Replay` -> Ensure that all observers see the same sequence of emitted items, even if they subscribe after the Observable has begun emitting items
 * `Concat` -> Emit the emissions from two or more Observables without interleaving them
 * `Merge` -> Combine multiple Observables into one by merging their emissions
+* `Defer` -> The Defer operator waits until an observer subscribes to it, and then it generates an Observable, typically with an Observable factory function. It does this afresh for each subscriber, so although each subscriber may think it is subscribing to the same Observable, in fact each subscriber gets its own individual sequence.
 
 * Coming More
 ## TODO
