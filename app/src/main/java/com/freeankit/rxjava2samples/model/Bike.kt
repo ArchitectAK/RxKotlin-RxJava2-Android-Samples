@@ -1,8 +1,6 @@
 package com.freeankit.rxjava2samples.model
 
 import io.reactivex.Observable
-import io.reactivex.ObservableSource
-import java.util.concurrent.Callable
 
 /**
  * @author Ankit Kumar (ankitdroiddeveloper@gmail.com) on 11/01/2018 (MM/DD/YYYY )

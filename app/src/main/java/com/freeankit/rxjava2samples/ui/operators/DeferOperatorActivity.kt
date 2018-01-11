@@ -31,7 +31,7 @@ class DeferOperatorActivity : AppCompatActivity() {
         val brandDeferObservable = bike.brandDeferObservable()
 
         bike.setBrand("Harley Davidson")  // Even if we are setting the brand after creating Observable
-        // we will get the brand as BMW.
+        // we will get the brand as Harley Davidson.
         // If we had not used defer, we would have got null as the brand.
 
         brandDeferObservable
