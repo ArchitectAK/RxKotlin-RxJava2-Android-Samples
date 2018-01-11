@@ -93,4 +93,8 @@ class OperatorsActivity : AppCompatActivity() {
     fun startMergeActivity(view: View) {
         startActivity(Intent(this@OperatorsActivity, MergeOperatorActivity::class.java))
     }
+
+    fun startDeferActivity(view: View) {
+        startActivity(Intent(this@OperatorsActivity, DeferOperatorActivity::class.java))
+    }
 }
