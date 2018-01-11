@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.util.Log
 import com.freeankit.rxjava2samples.R
+import com.freeankit.rxjava2samples.utils.Constant
 import io.reactivex.Observer
 import io.reactivex.disposables.Disposable
 import kotlinx.android.synthetic.main.activity_example_operator.*
@@ -41,25 +42,25 @@ class DeferOperatorActivity : AppCompatActivity() {
         return object : Observer<String> {
 
             override fun onSubscribe(d: Disposable) {
-                Log.d(TAG, " onSubscribe : " + d.isDisposed)
+                Log.d(Constant().TAG, " onSubscribe : " + d.isDisposed)
             }
 
             override fun onNext(value: String) {
                 textView.append(" onNext : value : " + value)
-                textView.append(AppConstant.LINE_SEPARATOR)
-                Log.d(TAG, " onNext : value : " + value)
+                textView.append(Constant().LINE_SEPARATOR)
+                Log.d(Constant().TAG, " onNext : value : " + value)
             }
 
             override fun onError(e: Throwable) {
                 textView.append(" onError : " + e.message)
-                textView.append(AppConstant.LINE_SEPARATOR)
-                Log.d(TAG, " onError : " + e.message)
+                textView.append(Constant().LINE_SEPARATOR)
+                Log.d(Constant().TAG, " onError : " + e.message)
             }
 
             override fun onComplete() {
                 textView.append(" onComplete")
-                textView.append(AppConstant.LINE_SEPARATOR)
-                Log.d(TAG, " onComplete")
+                textView.append(Constant().LINE_SEPARATOR)
+                Log.d(Constant().TAG, " onComplete")
             }
         }
     }
