@@ -97,4 +97,8 @@ class OperatorsActivity : AppCompatActivity() {
     fun startDeferActivity(view: View) {
         startActivity(Intent(this@OperatorsActivity, DeferOperatorActivity::class.java))
     }
+
+    fun startDistinctActivity(view: View) {
+        startActivity(Intent(this@OperatorsActivity, DistinctOperatorActivity::class.java))
+    }
 }

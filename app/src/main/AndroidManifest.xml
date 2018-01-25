@@ -38,6 +38,7 @@
         <activity android:name=".ui.operators.ConcatOperatorActivity" />
         <activity android:name=".ui.operators.MergeOperatorActivity" />
         <activity android:name=".ui.operators.DeferOperatorActivity" />
+        <activity android:name=".ui.operators.DistinctOperatorActivity" />
     </application>
 
 </manifest>
