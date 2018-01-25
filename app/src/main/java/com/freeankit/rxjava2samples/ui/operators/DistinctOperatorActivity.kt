@@ -3,7 +3,6 @@ package com.freeankit.rxjava2samples.ui.operators
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import com.freeankit.rxjava2samples.R
-import com.freeankit.rxjava2samples.R.id.btn
 import kotlinx.android.synthetic.main.activity_example_operator.*
 
 /**
