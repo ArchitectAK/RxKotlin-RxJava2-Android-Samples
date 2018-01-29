@@ -40,6 +40,7 @@
         <activity android:name=".ui.operators.DeferOperatorActivity" />
         <activity android:name=".ui.operators.DistinctOperatorActivity" />
         <activity android:name=".ui.operators.ReplaySubjectOperatorActivity" />
+        <activity android:name=".ui.operators.PublishSubjectOperatorActivity" />
     </application>
 
 </manifest>
