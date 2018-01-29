@@ -39,6 +39,7 @@
         <activity android:name=".ui.operators.MergeOperatorActivity" />
         <activity android:name=".ui.operators.DeferOperatorActivity" />
         <activity android:name=".ui.operators.DistinctOperatorActivity" />
+        <activity android:name=".ui.operators.ReplaySubjectOperatorActivity" />
     </application>
 
 </manifest>
