@@ -159,5 +159,12 @@
             android:onClick="startDeferActivity"
             android:text="@string/defer"
             android:textColor="@android:color/black" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="startDistinctActivity"
+            android:text="@string/defer"
+            android:textColor="@android:color/black" />
     </LinearLayout>
 </ScrollView>

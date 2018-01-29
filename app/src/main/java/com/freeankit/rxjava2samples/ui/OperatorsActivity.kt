@@ -101,4 +101,12 @@ class OperatorsActivity : AppCompatActivity() {
     fun startDistinctActivity(view: View) {
         startActivity(Intent(this@OperatorsActivity, DistinctOperatorActivity::class.java))
     }
+
+    fun startReplaySubjectActivity(view: View) {
+        startActivity(Intent(this@OperatorsActivity, ReplaySubjectOperatorActivity::class.java))
+    }
+
+    fun startPublishSubjectActivity(view: View) {
+        startActivity(Intent(this@OperatorsActivity, PublishSubjectOperatorActivity::class.java))
+    }
 }
