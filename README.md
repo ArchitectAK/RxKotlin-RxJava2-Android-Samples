@@ -79,6 +79,7 @@ Adding more operator examples
 * [DistinctOperatorActivity](https://github.com/AnkitDroidGit/RxJava-RxKotlin-Android-Samples/blob/master/app/src/main/java/com/freeankit/rxjava2samples/ui/operators/DistinctOperatorActivity.kt) -Using `Distinct` Operator
 * [ReplaySubjectOperatorActivity](https://github.com/AnkitDroidGit/RxJava-RxKotlin-Android-Samples/blob/master/app/src/main/java/com/freeankit/rxjava2samples/ui/operators/ReplaySubjectOperatorActivity.kt) -Using `Replay Subject` Operator
 * [PublishSubjectOperatorActivity](https://github.com/AnkitDroidGit/RxJava-RxKotlin-Android-Samples/blob/master/app/src/main/java/com/freeankit/rxjava2samples/ui/operators/PublishSubjectOperatorActivity.kt) -Using `Publish Subject` Operator
+* [BehaviorSubjectActivity](https://github.com/AnkitDroidGit/RxJava-RxKotlin-Android-Samples/blob/master/app/src/main/java/com/freeankit/rxjava2samples/ui/operators/BehaviorSubjectActivity.kt) -Using `Behavior Subject` Operator
  
 * Coming More
 
