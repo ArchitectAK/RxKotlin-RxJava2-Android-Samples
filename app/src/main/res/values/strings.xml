@@ -25,4 +25,5 @@
     <string name="defer">Defer</string>
     <string name="replay_subject">Replay Subject</string>
     <string name="publish_subject">Publish Subject</string>
+    <string name="behavior_subject">Behaviour Subject</string>
 </resources>
