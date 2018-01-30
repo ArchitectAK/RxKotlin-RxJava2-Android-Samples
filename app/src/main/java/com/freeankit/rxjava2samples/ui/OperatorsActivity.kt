@@ -109,4 +109,8 @@ class OperatorsActivity : AppCompatActivity() {
     fun startPublishSubjectActivity(view: View) {
         startActivity(Intent(this@OperatorsActivity, PublishSubjectOperatorActivity::class.java))
     }
+
+    fun startBehaviorSubjectActivity(view: View) {
+        startActivity(Intent(this@OperatorsActivity, BehaviorSubjectActivity::class.java))
+    }
 }
