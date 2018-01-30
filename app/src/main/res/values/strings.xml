@@ -23,4 +23,6 @@
     <string name="concat">Concat</string>
     <string name="merge">Merge</string>
     <string name="defer">Defer</string>
+    <string name="replay_subject">Replay Subject</string>
+    <string name="publish_subject">Publish Subject</string>
 </resources>
