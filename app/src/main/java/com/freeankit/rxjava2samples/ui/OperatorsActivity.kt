@@ -113,4 +113,8 @@ class OperatorsActivity : AppCompatActivity() {
     fun startBehaviorSubjectActivity(view: View) {
         startActivity(Intent(this@OperatorsActivity, BehaviorSubjectActivity::class.java))
     }
+
+    fun startAsyncSubjectActivity(view: View) {
+        startActivity(Intent(this@OperatorsActivity, AsyncSubjectOperatorActivity::class.java))
+    }
 }
