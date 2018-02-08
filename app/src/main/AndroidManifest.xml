@@ -42,6 +42,7 @@
         <activity android:name=".ui.operators.ReplaySubjectOperatorActivity" />
         <activity android:name=".ui.operators.PublishSubjectOperatorActivity" />
         <activity android:name=".ui.operators.BehaviorSubjectActivity" />
+        <activity android:name=".ui.operators.AsyncSubjectOperatorActivity" />
     </application>
 
 </manifest>
