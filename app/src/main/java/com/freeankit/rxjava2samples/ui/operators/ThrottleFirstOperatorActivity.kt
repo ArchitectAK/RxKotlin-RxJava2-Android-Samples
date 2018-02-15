@@ -3,7 +3,13 @@ package com.freeankit.rxjava2samples.ui.operators
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import com.freeankit.rxjava2samples.R
+import io.reactivex.Observable
+import io.reactivex.ObservableEmitter
+import io.reactivex.ObservableOnSubscribe
+import io.reactivex.android.schedulers.AndroidSchedulers
+import io.reactivex.schedulers.Schedulers
 import kotlinx.android.synthetic.main.activity_example_operator.*
+import java.util.concurrent.TimeUnit
 
 /**
  * @author Ankit Kumar (ankitdroiddeveloper@gmail.com) on 15/02/2018 (MM/DD/YYYY )
@@ -16,8 +22,40 @@ class ThrottleFirstOperatorActivity :AppCompatActivity() {
         btn.setOnClickListener({ executeThrottleFirstOperator() })
     }
 
+
+    /*
+   * Using throttleFirst() -> if the source Observable has emitted no items since
+   * the last time it was sampled, the Observable that results from this operator
+   * will emit no item for that sampling period.
+   */
     private fun executeThrottleFirstOperator() {
 
+        getObservable()
+                .throttleFirst(500, TimeUnit.MILLISECONDS)
+                // Run on a background thread
+                .subscribeOn(Schedulers.io())
+                // Be notified on the main thread
+                .observeOn(AndroidSchedulers.mainThread())
+                .subscribe(getObserver())
+    }
 
+    private fun getObservable(): Observable<Int> {
+        return Observable.create { emitter ->
+            // send events with simulated time wait
+            Thread.sleep(0)
+            emitter.onNext(1) // skip
+            emitter.onNext(2) // deliver
+            Thread.sleep(505)
+            emitter.onNext(3) // skip
+            Thread.sleep(99)
+            emitter.onNext(4) // skip
+            Thread.sleep(100)
+            emitter.onNext(5) // skip
+            emitter.onNext(6) // deliver
+            Thread.sleep(305)
+            emitter.onNext(7) // deliver
+            Thread.sleep(510)
+            emitter.onComplete()
+        }
     }
 }
