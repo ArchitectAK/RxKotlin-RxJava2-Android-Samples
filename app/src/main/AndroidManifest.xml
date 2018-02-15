@@ -43,6 +43,7 @@
         <activity android:name=".ui.operators.PublishSubjectOperatorActivity" />
         <activity android:name=".ui.operators.BehaviorSubjectActivity" />
         <activity android:name=".ui.operators.AsyncSubjectOperatorActivity" />
+        <activity android:name=".ui.operators.ThrottleFirstOperatorActivity" />
     </application>
 
 </manifest>
