@@ -27,4 +27,5 @@
     <string name="publish_subject">Publish Subject</string>
     <string name="behavior_subject">Behaviour Subject</string>
     <string name="async_subject">Async Subject</string>
+    <string name="throttle">Throttle First</string>
 </resources>
