@@ -48,8 +48,8 @@ class DebounceOperatorActivity : AppCompatActivity() {
             Thread.sleep(505)
             emitter.onNext(3) // skip
             Thread.sleep(100)
-            emitter.onNext(4) // deliver
-            Thread.sleep(605)
+            emitter.onNext(4) // deliver kj h ihioh
+            Thread.sleep(605) ///////////////
             emitter.onNext(5) // deliver
             Thread.sleep(510)
             emitter.onComplete()
