@@ -50,6 +50,7 @@ If you are using RxAndroid also, then add the following
 * `Defer` -> The Defer operator waits until an observer subscribes to it, and then it generates an Observable, typically with an Observable factory function. It does this afresh for each subscriber, so although each subscriber may think it is subscribing to the same Observable, in fact each subscriber gets its own individual sequence.
 * `Distinct` -> Suppress duplicate items emitted by an Observable
 * `Replay Subject` -> Replays events (in a configurable bounded or unbounded manner) to current and late Observers.
+* `Publish Subject` -> Subject that, once an Observer has subscribed, emits all subsequently observed items to the subscriber
 
 * Coming More
 ## TODO
