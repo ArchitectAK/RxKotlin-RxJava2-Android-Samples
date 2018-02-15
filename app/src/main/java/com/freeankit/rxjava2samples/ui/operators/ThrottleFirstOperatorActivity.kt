@@ -71,7 +71,7 @@ class ThrottleFirstOperatorActivity : AppCompatActivity() {
             override fun onNext(value: Int) {
                 textView.append(" onNext : ")
                 textView.append(Constant().LINE_SEPARATOR)
-                textView.append(" value : " + value!!)
+                textView.append(" value : " + value)
                 textView.append(Constant().LINE_SEPARATOR)
                 Log.d(Constant().TAG, " onNext ")
                 Log.d(Constant().TAG, " value : " + value)
