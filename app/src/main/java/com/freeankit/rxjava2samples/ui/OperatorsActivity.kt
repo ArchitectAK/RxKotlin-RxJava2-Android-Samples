@@ -117,4 +117,8 @@ class OperatorsActivity : AppCompatActivity() {
     fun startAsyncSubjectActivity(view: View) {
         startActivity(Intent(this@OperatorsActivity, AsyncSubjectOperatorActivity::class.java))
     }
+
+    fun startThrottleFirstActivity(view: View) {
+        startActivity(Intent(this@OperatorsActivity, ThrottleFirstOperatorActivity::class.java))
+    }
 }
