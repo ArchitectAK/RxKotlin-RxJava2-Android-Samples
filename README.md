@@ -51,6 +51,8 @@ If you are using RxAndroid also, then add the following
 * `Distinct` -> Suppress duplicate items emitted by an Observable
 * `Replay Subject` -> Replays events (in a configurable bounded or unbounded manner) to current and late Observers.
 * `Publish Subject` -> Subject that, once an Observer has subscribed, emits all subsequently observed items to the subscriber
+* `Behaviour Subject` -> Subject that emits the most recent item it has observed and all subsequent observed items to each subscribed Observer.
+* `Aync Subject` -> A Subject that emits the very last value followed by a completion event or the received error to Observers.
 
 * Coming More
 ## TODO
