@@ -53,6 +53,7 @@ If you are using RxAndroid also, then add the following
 * `Publish Subject` -> Subject that, once an Observer has subscribed, emits all subsequently observed items to the subscriber
 * `Behaviour Subject` -> Subject that emits the most recent item it has observed and all subsequent observed items to each subscribed Observer.
 * `Aync Subject` -> A Subject that emits the very last value followed by a completion event or the received error to Observers.
+* `Throttle First` -> Emit the first items emitted by an Observable within periodic time intervals
 
 * Coming More
 ## TODO
