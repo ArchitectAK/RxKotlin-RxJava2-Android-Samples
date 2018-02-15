@@ -81,6 +81,7 @@ Adding more operator examples
 * [PublishSubjectOperatorActivity](https://github.com/AnkitDroidGit/RxJava-RxKotlin-Android-Samples/blob/master/app/src/main/java/com/freeankit/rxjava2samples/ui/operators/PublishSubjectOperatorActivity.kt) -Using `Publish Subject` Operator
 * [BehaviorSubjectActivity](https://github.com/AnkitDroidGit/RxJava-RxKotlin-Android-Samples/blob/master/app/src/main/java/com/freeankit/rxjava2samples/ui/operators/BehaviorSubjectActivity.kt) -Using `Behavior Subject` Operator
 * [AsyncSubjectOperatorActivity](https://github.com/AnkitDroidGit/RxJava-RxKotlin-Android-Samples/blob/master/app/src/main/java/com/freeankit/rxjava2samples/ui/operators/AsyncSubjectOperatorActivity.kt) -Using `Aync Subject` Operator
+* [ThrottleFirstOperatorActivity](https://github.com/AnkitDroidGit/RxJava-RxKotlin-Android-Samples/blob/master/app/src/main/java/com/freeankit/rxjava2samples/ui/operators/ThrottleFirstOperatorActivity.kt) -Using `Throttle First` Operator
  
 * Coming More
 
