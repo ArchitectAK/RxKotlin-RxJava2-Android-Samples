@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/RxJava-RxKotlin-Android-Samples.iml" filepath="$PROJECT_DIR$/RxJava-RxKotlin-Android-Samples.iml" />
       <module fileurl="file://$PROJECT_DIR$/RxJava2Samples.iml" filepath="$PROJECT_DIR$/RxJava2Samples.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
