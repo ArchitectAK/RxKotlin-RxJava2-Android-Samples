@@ -1,8 +1,31 @@
 <resources>
-    <string name="app_name">RxJava2Samples</string>
+    <string name="app_name">RxKotlin2Samples</string>
     <string name="simple">Simple</string>
     <string name="map">Map</string>
     <string name="zip">Zip</string>
     <string name="click_here_to_execute">Click to Execute</string>
     <string name="operators">Operators</string>
+    <string name="disposable">Disposable</string>
+    <string name="flatmap">FlatMap</string>
+    <string name="interval">Interval</string>
+    <string name="take">Take</string>
+    <string name="timer">Timer</string>
+    <string name="debounce">Debounce</string>
+    <string name="single">Single Observer</string>
+    <string name="CompletableObserver">Completable Observer</string>
+    <string name="flowable">Flowable</string>
+    <string name="reduce">Reduce</string>
+    <string name="buffer">Buffer</string>
+    <string name="filter">Filter</string>
+    <string name="skip">Skip</string>
+    <string name="scan">Scan</string>
+    <string name="replay">Replay</string>
+    <string name="concat">Concat</string>
+    <string name="merge">Merge</string>
+    <string name="defer">Defer</string>
+    <string name="replay_subject">Replay Subject</string>
+    <string name="publish_subject">Publish Subject</string>
+    <string name="behavior_subject">Behaviour Subject</string>
+    <string name="async_subject">Async Subject</string>
+    <string name="throttle">Throttle First</string>
 </resources>

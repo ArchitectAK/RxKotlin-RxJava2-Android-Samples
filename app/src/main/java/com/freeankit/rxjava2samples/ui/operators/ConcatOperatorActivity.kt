@@ -3,42 +3,42 @@ package com.freeankit.rxjava2samples.ui.operators
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.util.Log
-import android.view.View
 import com.freeankit.rxjava2samples.R
 import com.freeankit.rxjava2samples.utils.Constant
 import io.reactivex.Observable
 import io.reactivex.Observer
-import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.Disposable
-import io.reactivex.schedulers.Schedulers
 import kotlinx.android.synthetic.main.activity_example_operator.*
 
 /**
- * @author Ankit Kumar (ankitdroiddeveloper@gmail.com) on 08/12/2017 (MM/DD/YYYY )
+ * @author Ankit Kumar (ankitdroiddeveloper@gmail.com) on 09/01/2018 (MM/DD/YYYY )
  */
-class SimpleOperatorActivity : AppCompatActivity() {
+class ConcatOperatorActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_example_operator)
 
-        btn.setOnClickListener({ executeSimpleOperator() })
+        btn.setOnClickListener({ executeConcatOperator() })
     }
 
     /*
-     * simple example to emit two value one by one
-     */
-    private fun executeSimpleOperator() {
-        progress.visibility = View.VISIBLE
-        getObservable()
-                // Run on a background thread
-                .subscribeOn(Schedulers.io())
-                // Be notified on the main thread
-                .observeOn(AndroidSchedulers.mainThread())
-                .subscribe(getObserver())
-    }
+    * Using concat operator to combine Observable : concat maintain
+    * the order of Observable.
+    * It will emit all the 7 values in order
+    * here - first "A1", "A2", "A3", "A4" and then "B1", "B2", "B3"
+    * first all from the first Observable and then
+    * all from the second Observable all in order
+    */
+    private fun executeConcatOperator() {
+        val aStrings = arrayOf("A1", "A2", "A3", "A4")
+        val bStrings = arrayOf("B1", "B2", "B3")
 
-    private fun getObservable(): Observable<String> {
-        return Observable.just("RxJava", "RxAndroid")
+        val aObservable = Observable.fromArray(*aStrings)
+        val bObservable = Observable.fromArray(*bStrings)
+
+        Observable.concat(aObservable, bObservable)
+                .subscribe(getObserver())
+
     }
 
     private fun getObserver(): Observer<String> {
@@ -50,23 +50,20 @@ class SimpleOperatorActivity : AppCompatActivity() {
 
             override fun onNext(value: String) {
                 textView.append(" onNext : value : " + value)
-                textView.append("\n")
+                textView.append(Constant().LINE_SEPARATOR)
                 Log.d(Constant().TAG, " onNext : value : " + value)
-                progress.visibility = View.GONE
             }
 
             override fun onError(e: Throwable) {
                 textView.append(" onError : " + e.message)
-                textView.append("\n")
+                textView.append(Constant().LINE_SEPARATOR)
                 Log.d(Constant().TAG, " onError : " + e.message)
-                progress.visibility = View.GONE
             }
 
             override fun onComplete() {
                 textView.append(" onComplete")
-                textView.append("\n\n")
+                textView.append(Constant().LINE_SEPARATOR)
                 Log.d(Constant().TAG, " onComplete")
-                progress.visibility = View.GONE
             }
         }
     }

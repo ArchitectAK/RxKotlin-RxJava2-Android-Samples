@@ -19,6 +19,31 @@
         <activity android:name=".ui.OperatorsActivity" />
         <activity android:name=".ui.operators.SimpleOperatorActivity" />
         <activity android:name=".ui.operators.MapOperatorActivity" />
+        <activity android:name=".ui.operators.ZipOperatorActivity" />
+        <activity android:name=".ui.operators.DisposableOperatorActivity" />
+        <activity android:name=".ui.operators.TakeOperatorActivity" />
+        <activity android:name=".ui.operators.TimerOperatorActivity" />
+        <activity android:name=".ui.operators.FlatMapOperatorActivity" />
+        <activity android:name=".ui.operators.IntervalOperatorActivity" />
+        <activity android:name=".ui.operators.DebounceOperatorActivity" />
+        <activity android:name=".ui.operators.SingleObserverOperatorActivity" />
+        <activity android:name=".ui.operators.CompletableObserverOperatorActivity" />
+        <activity android:name=".ui.operators.FlowableOperatorActivity" />
+        <activity android:name=".ui.operators.ReduceOperatorActivity" />
+        <activity android:name=".ui.operators.BufferOperatorActivity" />
+        <activity android:name=".ui.operators.FilterOperatorActivity" />
+        <activity android:name=".ui.operators.SkipOperatorActivity" />
+        <activity android:name=".ui.operators.ScanOperatorActivity" />
+        <activity android:name=".ui.operators.ReplayOperatorActivity" />
+        <activity android:name=".ui.operators.ConcatOperatorActivity" />
+        <activity android:name=".ui.operators.MergeOperatorActivity" />
+        <activity android:name=".ui.operators.DeferOperatorActivity" />
+        <activity android:name=".ui.operators.DistinctOperatorActivity" />
+        <activity android:name=".ui.operators.ReplaySubjectOperatorActivity" />
+        <activity android:name=".ui.operators.PublishSubjectOperatorActivity" />
+        <activity android:name=".ui.operators.BehaviorSubjectActivity" />
+        <activity android:name=".ui.operators.AsyncSubjectOperatorActivity" />
+        <activity android:name=".ui.operators.ThrottleFirstOperatorActivity" />
     </application>
 
 </manifest>
