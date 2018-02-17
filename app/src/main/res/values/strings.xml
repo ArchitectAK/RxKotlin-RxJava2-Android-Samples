@@ -28,4 +28,5 @@
     <string name="behavior_subject">Behaviour Subject</string>
     <string name="async_subject">Async Subject</string>
     <string name="throttle">Throttle First</string>
+    <string name="throttle_last">Throttle Last</string>
 </resources>
