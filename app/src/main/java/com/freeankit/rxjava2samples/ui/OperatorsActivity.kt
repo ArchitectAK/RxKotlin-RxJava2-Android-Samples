@@ -121,4 +121,8 @@ class OperatorsActivity : AppCompatActivity() {
     fun startThrottleFirstActivity(view: View) {
         startActivity(Intent(this@OperatorsActivity, ThrottleFirstOperatorActivity::class.java))
     }
+
+    fun startThrottleLastActivity(view: View) {
+        startActivity(Intent(this@OperatorsActivity, ThrottleLastOperatorActivity::class.java))
+    }
 }
