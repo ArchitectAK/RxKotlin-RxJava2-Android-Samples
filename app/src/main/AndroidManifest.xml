@@ -45,6 +45,7 @@
         <activity android:name=".ui.operators.AsyncSubjectOperatorActivity" />
         <activity android:name=".ui.operators.ThrottleFirstOperatorActivity" />
         <activity android:name=".ui.operators.ThrottleLastOperatorActivity" />
+        <activity android:name=".ui.operators.WindowOperatorActivity" />
     </application>
 
 </manifest>
