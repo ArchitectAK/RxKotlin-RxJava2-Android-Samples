@@ -39,7 +39,37 @@ class WindowOperatorActivity : AppCompatActivity() {
                 .subscribe(getConsumer())
     }
 
-    fun getConsumer(): Consumer<Observable<Long>> {
+
+/*
+* Without Lambda
+* */
+
+
+//    fun getConsumer(): Consumer<Observable<Long>> {
+//        return Consumer { observable ->
+//            Log.d(Constant().TAG, "Sub Divide begin....")
+//            textView.append("Sub Divide begin ....")
+//            textView.append(Constant().LINE_SEPARATOR)
+//            observable
+//                    .subscribeOn(Schedulers.io())
+//                    .observeOn(AndroidSchedulers.mainThread())
+//                    .subscribe(object : Consumer<Long> {
+//                        override fun accept(value: Long) {
+//                            Log.d(Constant().TAG, "Next:" + value)
+//                            textView.append("Next:" + value)
+//                            textView.append(Constant().LINE_SEPARATOR)
+//                        }
+//                    })
+//        }
+//    }
+
+
+
+/*
+* With Lambda
+* */
+
+    private fun getConsumer(): Consumer<Observable<Long>> {
         return Consumer { observable ->
             Log.d(Constant().TAG, "Sub Divide begin....")
             textView.append("Sub Divide begin ....")
@@ -47,13 +77,11 @@ class WindowOperatorActivity : AppCompatActivity() {
             observable
                     .subscribeOn(Schedulers.io())
                     .observeOn(AndroidSchedulers.mainThread())
-                    .subscribe(object : Consumer<Long> {
-                        override fun accept(value: Long) {
-                            Log.d(Constant().TAG, "Next:" + value)
-                            textView.append("Next:" + value)
-                            textView.append(Constant().LINE_SEPARATOR)
-                        }
-                    })
+                    .subscribe { value ->
+                        Log.d(Constant().TAG, "Next:" + value)
+                        textView.append("Next:" + value)
+                        textView.append(Constant().LINE_SEPARATOR)
+                    }
         }
     }
 }
