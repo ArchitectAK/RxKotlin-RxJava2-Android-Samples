@@ -30,4 +30,5 @@
     <string name="throttle">Throttle First</string>
     <string name="throttle_last">Throttle Last</string>
     <string name="window">Window</string>
+    <string name="delay">Delay</string>
 </resources>

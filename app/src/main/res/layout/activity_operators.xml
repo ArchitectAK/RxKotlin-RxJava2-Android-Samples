@@ -215,5 +215,12 @@
             android:onClick="startWindowActivity"
             android:text="@string/window"
             android:textColor="@android:color/black" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="startDelayActivity"
+            android:text="@string/delay"
+            android:textColor="@android:color/black" />
     </LinearLayout>
 </ScrollView>
