@@ -125,4 +125,8 @@ class OperatorsActivity : AppCompatActivity() {
     fun startThrottleLastActivity(view: View) {
         startActivity(Intent(this@OperatorsActivity, ThrottleLastOperatorActivity::class.java))
     }
+
+    fun startWindowActivity(view: View) {
+        startActivity(Intent(this@OperatorsActivity, WindowOperatorActivity::class.java))
+    }
 }
