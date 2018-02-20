@@ -6,6 +6,18 @@ import android.support.v7.app.AppCompatActivity
 import android.view.View
 import com.freeankit.rxjava2samples.R
 import com.freeankit.rxjava2samples.ui.operators.*
+import com.freeankit.rxjava2samples.ui.operators.combiningOperators.MergeOperatorActivity
+import com.freeankit.rxjava2samples.ui.operators.combiningOperators.ZipOperatorActivity
+import com.freeankit.rxjava2samples.ui.operators.connectableOperators.PublishSubjectOperatorActivity
+import com.freeankit.rxjava2samples.ui.operators.connectableOperators.ReplayOperatorActivity
+import com.freeankit.rxjava2samples.ui.operators.connectableOperators.ReplaySubjectOperatorActivity
+import com.freeankit.rxjava2samples.ui.operators.creatingOperators.DeferOperatorActivity
+import com.freeankit.rxjava2samples.ui.operators.creatingOperators.IntervalOperatorActivity
+import com.freeankit.rxjava2samples.ui.operators.filteringOperators.*
+import com.freeankit.rxjava2samples.ui.operators.mathematicalOperators.ConcatOperatorActivity
+import com.freeankit.rxjava2samples.ui.operators.mathematicalOperators.ReduceOperatorActivity
+import com.freeankit.rxjava2samples.ui.operators.transformingOperators.*
+import com.freeankit.rxjava2samples.ui.operators.utilityOperators.DelayOperatorActivity
 
 /**
  * @author Ankit Kumar (ankitdroiddeveloper@gmail.com) on 08/12/2017 (MM/DD/YYYY )

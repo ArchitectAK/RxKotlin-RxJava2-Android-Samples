@@ -1,4 +1,4 @@
-package com.freeankit.rxjava2samples.ui.operators
+package com.freeankit.rxjava2samples.ui.operators.connectableOperators
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
@@ -7,38 +7,40 @@ import com.freeankit.rxjava2samples.R
 import com.freeankit.rxjava2samples.utils.Constant
 import io.reactivex.Observer
 import io.reactivex.disposables.Disposable
-import io.reactivex.subjects.ReplaySubject
+import io.reactivex.subjects.PublishSubject
 import kotlinx.android.synthetic.main.activity_example_operator.*
 
 /**
  * @author Ankit Kumar (ankitdroiddeveloper@gmail.com) on 29/01/2018 (MM/DD/YYYY )
  */
-class ReplaySubjectOperatorActivity : AppCompatActivity() {
+class PublishSubjectOperatorActivity:AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_example_operator)
 
-        btn.setOnClickListener({ executeReplaySubjectOperator() })
+        btn.setOnClickListener({ executePublishSubjectOperator() })
     }
 
-    /* ReplaySubject emits to any observer all of the items that were emitted
-    * by the source Observable, regardless of when the observer subscribes.
-    */
-    private fun executeReplaySubjectOperator() {
-        val source = ReplaySubject.create<Int>()
 
-        source.subscribe(getFirstObserver()) // it will get 1, 2, 3, 4
+    /* PublishSubject emits to an observer only those items that are emitted
+    * by the source Observable, subsequent to the time of the subscription.
+    */
+    private fun executePublishSubjectOperator() {
+        val source = PublishSubject.create<Int>()
+
+        source.subscribe(getFirstObserver()) // it will get 1, 2, 3, 4 and onComplete
 
         source.onNext(1)
         source.onNext(2)
         source.onNext(3)
-        source.onNext(4)
-        source.onComplete()
 
         /*
-         * it will emit 1, 2, 3, 4 for second observer also as we have used replay
+         * it will emit 4 and onComplete for second observer also.
          */
         source.subscribe(getSecondObserver())
+
+        source.onNext(4)
+        source.onComplete()
 
     }
 

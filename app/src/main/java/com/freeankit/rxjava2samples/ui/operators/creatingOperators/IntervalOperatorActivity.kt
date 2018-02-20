@@ -1,4 +1,4 @@
-package com.freeankit.rxjava2samples.ui.operators
+package com.freeankit.rxjava2samples.ui.operators.creatingOperators
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
@@ -11,46 +11,48 @@ import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.Disposable
 import io.reactivex.schedulers.Schedulers
 import kotlinx.android.synthetic.main.activity_example_operator.*
+import java.util.concurrent.TimeUnit
 
 /**
- * @author Ankit Kumar (ankitdroiddeveloper@gmail.com) on 12/12/2017 (MM/DD/YYYY )
+ * @author Ankit Kumar (ankitdroiddeveloper@gmail.com) on 15/12/2017 (MM/DD/YYYY )
  */
-class TakeOperatorActivity : AppCompatActivity() {
+class IntervalOperatorActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_example_operator)
 
-        btn.setOnClickListener({ executeTakeOperator() })
+        btn.setOnClickListener({ executeIntervalOperator() })
     }
 
-    /* Using take operator, it only emits
-   * required number of values. here only 3 out of 5
-   */
-    private fun executeTakeOperator() {
-
+    /*
+    * simple example using interval to run task at an interval of 2 sec
+    * which start immediately
+    */
+    private fun executeIntervalOperator() {
         getObservable()
                 // Run on a background thread
                 .subscribeOn(Schedulers.io())
                 // Be notified on the main thread
                 .observeOn(AndroidSchedulers.mainThread())
-                .take(3)
                 .subscribe(getObserver())
+
     }
 
-    private fun getObservable(): Observable<Int> {
-        return Observable.just(1, 2, 3, 4, 5)
+    private fun getObservable(): Observable<out Long> {
+        return Observable.interval(1, 2, TimeUnit.SECONDS)
     }
 
-    private fun getObserver(): Observer<Int> {
-        return object : Observer<Int> {
+    private fun getObserver(): Observer<Long> {
+        return object : Observer<Long> {
+
             override fun onSubscribe(d: Disposable) {
                 Log.d(Constant().TAG, " onSubscribe : " + d.isDisposed)
             }
 
-            override fun onNext(value: Int) {
+            override fun onNext(value: Long) {
                 textView.append(" onNext : value : " + value)
                 textView.append(Constant().LINE_SEPARATOR)
-                Log.d(Constant().TAG, " onNext value : " + value)
+                Log.d(Constant().TAG, " onNext : value : " + value)
             }
 
             override fun onError(e: Throwable) {
@@ -66,5 +68,4 @@ class TakeOperatorActivity : AppCompatActivity() {
             }
         }
     }
-
 }

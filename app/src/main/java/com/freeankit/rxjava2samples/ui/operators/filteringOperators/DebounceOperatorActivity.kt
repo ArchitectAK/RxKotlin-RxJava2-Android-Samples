@@ -1,4 +1,4 @@
-package com.freeankit.rxjava2samples.ui.operators
+package com.freeankit.rxjava2samples.ui.operators.filteringOperators
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
@@ -11,36 +11,51 @@ import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.Disposable
 import io.reactivex.schedulers.Schedulers
 import kotlinx.android.synthetic.main.activity_example_operator.*
+import java.util.concurrent.TimeUnit
 
 /**
- * @author Ankit Kumar (ankitdroiddeveloper@gmail.com) on 13/12/2017 (MM/DD/YYYY )
+ * @author Ankit Kumar (ankitdroiddeveloper@gmail.com) on 15/12/2017 (MM/DD/YYYY )
  */
-class FlatMapOperatorActivity : AppCompatActivity() {
+class DebounceOperatorActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_example_operator)
 
-        btn.setOnClickListener({ executeFlatMapOperator() })
+        btn.setOnClickListener({ executeDebounceOperator() })
     }
 
-    /*Transform the items emitted by an Observable into Observables,
-    then flatten the emissions from those into a single Observable*/
-    private fun executeFlatMapOperator() {
+    /*
+      * Using debounce() -> only emit an item from an Observable if a particular time-span has
+      * passed without it emitting another item, so it will emit 2, 4, 5 as we have simulated it.
+      */
+    private fun executeDebounceOperator() {
         getObservable()
+                .debounce(500, TimeUnit.MILLISECONDS)
+                // Run on a background thread
                 .subscribeOn(Schedulers.io())
                 // Be notified on the main thread
                 .observeOn(AndroidSchedulers.mainThread())
-                .flatMap { integer -> multiplyInt(integer, 2) }
-                .flatMap { integer -> multiplyInt(integer, 3) }
-                .flatMap { integer -> multiplyInt(integer, 5) }
                 .subscribe(getObserver())
-
 
     }
 
     private fun getObservable(): Observable<Int> {
-        return Observable.just(1, 2, 3, 4, 5)
+        return Observable.create { emitter ->
+            // send events with simulated time wait
+            emitter.onNext(1) // skip
+            Thread.sleep(400)
+            emitter.onNext(2) // deliver
+            Thread.sleep(505)
+            emitter.onNext(3) // skip
+            Thread.sleep(100)
+            emitter.onNext(4) // deliver kj h ihioh
+            Thread.sleep(605) ///////////////
+            emitter.onNext(5) // deliver
+            Thread.sleep(510)
+            emitter.onComplete()
+        }
     }
+
 
     private fun getObserver(): Observer<Int> {
         return object : Observer<Int> {
@@ -66,13 +81,6 @@ class FlatMapOperatorActivity : AppCompatActivity() {
                 Log.d(Constant().TAG, " onComplete")
             }
         }
-    }
-
-    private fun multiplyInt(integer: Int?, mulplier: Int): Observable<Int> {
-        //simulating a heavy duty computational expensive operation
-        for (i in 0..100) {
-        }
-        return Observable.just(integer!! * mulplier)
     }
 
 }

@@ -1,4 +1,4 @@
-package com.freeankit.rxjava2samples.ui.operators
+package com.freeankit.rxjava2samples.ui.operators.connectableOperators
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
@@ -11,36 +11,37 @@ import io.reactivex.subjects.PublishSubject
 import kotlinx.android.synthetic.main.activity_example_operator.*
 
 /**
- * @author Ankit Kumar (ankitdroiddeveloper@gmail.com) on 29/01/2018 (MM/DD/YYYY )
+ * @author Ankit Kumar (ankitdroiddeveloper@gmail.com) on 08/01/2018 (MM/DD/YYYY )
  */
-class PublishSubjectOperatorActivity:AppCompatActivity() {
+class ReplayOperatorActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_example_operator)
 
-        btn.setOnClickListener({ executePublishSubjectOperator() })
+        btn.setOnClickListener({ executeReplayOperator() })
     }
 
 
-    /* PublishSubject emits to an observer only those items that are emitted
-    * by the source Observable, subsequent to the time of the subscription.
-    */
-    private fun executePublishSubjectOperator() {
+    /* Using replay operator, replay ensure that all observers see the same sequence
+     * of emitted items, even if they subscribe after the Observable has begun emitting items
+     */
+    private fun executeReplayOperator() {
         val source = PublishSubject.create<Int>()
+        val connectableObservable = source.replay(3) // bufferSize = 3 to retain 3 values to replay
+        connectableObservable.connect() // connecting the connectableObservable
 
-        source.subscribe(getFirstObserver()) // it will get 1, 2, 3, 4 and onComplete
+        connectableObservable.subscribe(getFirstObserver())
 
         source.onNext(1)
         source.onNext(2)
         source.onNext(3)
-
-        /*
-         * it will emit 4 and onComplete for second observer also.
-         */
-        source.subscribe(getSecondObserver())
-
         source.onNext(4)
         source.onComplete()
+
+        /*
+         * it will emit 2, 3, 4 as (count = 3), retains the 3 values for replay
+         */
+        connectableObservable.subscribe(getSecondObserver())
 
     }
 
@@ -52,7 +53,7 @@ class PublishSubjectOperatorActivity:AppCompatActivity() {
             }
 
             override fun onNext(value: Int) {
-                textView.append(" First onNext : value : " + value!!)
+                textView.append(" First onNext : value : " + value)
                 textView.append(Constant().LINE_SEPARATOR)
                 Log.d(Constant().TAG, " First onNext value : " + value)
             }
@@ -88,13 +89,11 @@ class PublishSubjectOperatorActivity:AppCompatActivity() {
 
             override fun onError(e: Throwable) {
                 textView.append(" Second onError : " + e.message)
-                textView.append(Constant().LINE_SEPARATOR)
                 Log.d(Constant().TAG, " Second onError : " + e.message)
             }
 
             override fun onComplete() {
                 textView.append(" Second onComplete")
-                textView.append(Constant().LINE_SEPARATOR)
                 Log.d(Constant().TAG, " Second onComplete")
             }
         }

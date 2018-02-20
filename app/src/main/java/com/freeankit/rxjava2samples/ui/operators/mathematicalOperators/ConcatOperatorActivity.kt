@@ -1,4 +1,4 @@
-package com.freeankit.rxjava2samples.ui.operators
+package com.freeankit.rxjava2samples.ui.operators.mathematicalOperators
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity

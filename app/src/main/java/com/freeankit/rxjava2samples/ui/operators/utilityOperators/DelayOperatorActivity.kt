@@ -1,4 +1,4 @@
-package com.freeankit.rxjava2samples.ui.operators
+package com.freeankit.rxjava2samples.ui.operators.utilityOperators
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
@@ -13,60 +13,47 @@ import io.reactivex.schedulers.Schedulers
 import kotlinx.android.synthetic.main.activity_example_operator.*
 import java.util.concurrent.TimeUnit
 
+
 /**
- * @author Ankit Kumar (ankitdroiddeveloper@gmail.com) on 15/12/2017 (MM/DD/YYYY )
+ * @author Ankit Kumar (ankitdroiddeveloper@gmail.com) on 20/02/2018 (MM/DD/YYYY)
  */
-class DebounceOperatorActivity : AppCompatActivity() {
+class DelayOperatorActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_example_operator)
 
-        btn.setOnClickListener({ executeDebounceOperator() })
+        btn.setOnClickListener({ executeDelayOperator() })
     }
 
+
     /*
-      * Using debounce() -> only emit an item from an Observable if a particular time-span has
-      * passed without it emitting another item, so it will emit 2, 4, 5 as we have simulated it.
-      */
-    private fun executeDebounceOperator() {
-        getObservable()
-                .debounce(500, TimeUnit.MILLISECONDS)
+    * simple example using delay to emit after 2 second
+    */
+    private fun executeDelayOperator() {
+
+        getObservable().delay(2, TimeUnit.SECONDS)
                 // Run on a background thread
                 .subscribeOn(Schedulers.io())
                 // Be notified on the main thread
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(getObserver())
-
     }
 
-    private fun getObservable(): Observable<Int> {
-        return Observable.create { emitter ->
-            // send events with simulated time wait
-            emitter.onNext(1) // skip
-            Thread.sleep(400)
-            emitter.onNext(2) // deliver
-            Thread.sleep(505)
-            emitter.onNext(3) // skip
-            Thread.sleep(100)
-            emitter.onNext(4) // deliver kj h ihioh
-            Thread.sleep(605) ///////////////
-            emitter.onNext(5) // deliver
-            Thread.sleep(510)
-            emitter.onComplete()
-        }
+    private fun getObservable(): Observable<String> {
+        return Observable.just("Jitendra Kumar")
     }
 
+    private fun getObserver(): Observer<String> {
+        return object : Observer<String> {
 
-    private fun getObserver(): Observer<Int> {
-        return object : Observer<Int> {
             override fun onSubscribe(d: Disposable) {
                 Log.d(Constant().TAG, " onSubscribe : " + d.isDisposed)
             }
 
-            override fun onNext(value: Int) {
+            override fun onNext(value: String) {
                 textView.append(" onNext : value : " + value)
                 textView.append(Constant().LINE_SEPARATOR)
-                Log.d(Constant().TAG, " onNext value : " + value)
+                Log.d(Constant().TAG, " onNext : value : " + value)
             }
 
             override fun onError(e: Throwable) {

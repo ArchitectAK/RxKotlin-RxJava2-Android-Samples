@@ -1,4 +1,4 @@
-package com.freeankit.rxjava2samples.ui.operators
+package com.freeankit.rxjava2samples.ui.operators.filteringOperators
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
@@ -7,50 +7,50 @@ import com.freeankit.rxjava2samples.R
 import com.freeankit.rxjava2samples.utils.Constant
 import io.reactivex.Observable
 import io.reactivex.Observer
+import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.Disposable
+import io.reactivex.schedulers.Schedulers
 import kotlinx.android.synthetic.main.activity_example_operator.*
 
 /**
- * @author Ankit Kumar (ankitdroiddeveloper@gmail.com) on 10/01/2018 (MM/DD/YYYY )
+ * @author Ankit Kumar (ankitdroiddeveloper@gmail.com) on 12/12/2017 (MM/DD/YYYY )
  */
-class MergeOperatorActivity : AppCompatActivity() {
+class TakeOperatorActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_example_operator)
 
-        btn.setOnClickListener({ executeMergeOperator() })
+        btn.setOnClickListener({ executeTakeOperator() })
     }
 
-    /*
-    * Using merge operator to combine Observable : merge does not maintain
-    * the order of Observable.
-    * It will emit all the 7 values may not be in order
-    * Ex - "A1", "B1", "A2", "A3", "A4", "B2", "B3" - may be anything
-    */
+    /* Using take operator, it only emits
+   * required number of values. here only 3 out of 5
+   */
+    private fun executeTakeOperator() {
 
-    private fun executeMergeOperator() {
-        val aStrings = arrayOf("A1", "A2", "A3", "A4")
-        val bStrings = arrayOf("B1", "B2", "B3")
-
-        val aObservable = Observable.fromArray(*aStrings)
-        val bObservable = Observable.fromArray(*bStrings)
-
-        Observable.merge(aObservable, bObservable)
+        getObservable()
+                // Run on a background thread
+                .subscribeOn(Schedulers.io())
+                // Be notified on the main thread
+                .observeOn(AndroidSchedulers.mainThread())
+                .take(3)
                 .subscribe(getObserver())
-
     }
 
-    private fun getObserver(): Observer<String> {
-        return object : Observer<String> {
+    private fun getObservable(): Observable<Int> {
+        return Observable.just(1, 2, 3, 4, 5)
+    }
 
+    private fun getObserver(): Observer<Int> {
+        return object : Observer<Int> {
             override fun onSubscribe(d: Disposable) {
                 Log.d(Constant().TAG, " onSubscribe : " + d.isDisposed)
             }
 
-            override fun onNext(value: String) {
+            override fun onNext(value: Int) {
                 textView.append(" onNext : value : " + value)
                 textView.append(Constant().LINE_SEPARATOR)
-                Log.d(Constant().TAG, " onNext : value : " + value)
+                Log.d(Constant().TAG, " onNext value : " + value)
             }
 
             override fun onError(e: Throwable) {
@@ -66,4 +66,5 @@ class MergeOperatorActivity : AppCompatActivity() {
             }
         }
     }
+
 }

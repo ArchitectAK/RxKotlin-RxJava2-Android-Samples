@@ -1,51 +1,55 @@
-package com.freeankit.rxjava2samples.ui.operators
+package com.freeankit.rxjava2samples.ui.operators.creatingOperators
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.util.Log
 import com.freeankit.rxjava2samples.R
+import com.freeankit.rxjava2samples.model.Bike
 import com.freeankit.rxjava2samples.utils.Constant
-import io.reactivex.Observable
 import io.reactivex.Observer
 import io.reactivex.disposables.Disposable
 import kotlinx.android.synthetic.main.activity_example_operator.*
 
 /**
- * @author Ankit Kumar (ankitdroiddeveloper@gmail.com) on 02/01/2018 (MM/DD/YYYY )
+ * @author Ankit Kumar (ankitdroiddeveloper@gmail.com) on 11/01/2018 (MM/DD/YYYY )
  */
-class FilterOperatorActivity : AppCompatActivity() {
+class DeferOperatorActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_example_operator)
 
-        btn.setOnClickListener({ executeFilterOperator() })
+        btn.setOnClickListener({ executeDeferOperator() })
     }
+
 
     /*
-    * simple example by using filter operator to emit only even value
-    *
-    */
-    private fun executeFilterOperator() {
+   * Defer used for Deferring Observable code until subscription in RxJava
+   */
+    private fun executeDeferOperator() {
+        val bike = Bike()
 
-        Observable.just(1, 2, 3, 4, 5, 6)
-                .filter { integer -> integer % 2 == 0 }
+        val brandDeferObservable = bike.brandDeferObservable()
+
+        bike.setBrand("Harley Davidson")  // Even if we are setting the brand after creating Observable
+        // we will get the brand as Harley Davidson.
+        // If we had not used defer, we would have got null as the brand.
+
+        brandDeferObservable
                 .subscribe(getObserver())
+
     }
 
-    private fun getObserver(): Observer<Int> {
-        return object : Observer<Int> {
+    private fun getObserver(): Observer<String> {
+        return object : Observer<String> {
 
             override fun onSubscribe(d: Disposable) {
                 Log.d(Constant().TAG, " onSubscribe : " + d.isDisposed)
             }
 
-            override fun onNext(value: Int) {
-                textView.append(" onNext : ")
+            override fun onNext(value: String) {
+                textView.append(" onNext : value : " + value)
                 textView.append(Constant().LINE_SEPARATOR)
-                textView.append(" value : " + value)
-                textView.append(Constant().LINE_SEPARATOR)
-                Log.d(Constant().TAG, " onNext ")
-                Log.d(Constant().TAG, " value : " + value)
+                Log.d(Constant().TAG, " onNext : value : " + value)
             }
 
             override fun onError(e: Throwable) {

@@ -1,4 +1,4 @@
-package com.freeankit.rxjava2samples.ui.operators
+package com.freeankit.rxjava2samples.ui.operators.combiningOperators
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
@@ -7,40 +7,37 @@ import com.freeankit.rxjava2samples.R
 import com.freeankit.rxjava2samples.utils.Constant
 import io.reactivex.Observable
 import io.reactivex.Observer
-import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.Disposable
-import io.reactivex.schedulers.Schedulers
 import kotlinx.android.synthetic.main.activity_example_operator.*
-import java.util.concurrent.TimeUnit
-
 
 /**
- * @author Ankit Kumar (ankitdroiddeveloper@gmail.com) on 20/02/2018 (MM/DD/YYYY)
+ * @author Ankit Kumar (ankitdroiddeveloper@gmail.com) on 10/01/2018 (MM/DD/YYYY )
  */
-class DelayOperatorActivity : AppCompatActivity() {
+class MergeOperatorActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_example_operator)
 
-        btn.setOnClickListener({ executeDelayOperator() })
+        btn.setOnClickListener({ executeMergeOperator() })
     }
-
 
     /*
-    * simple example using delay to emit after 2 second
+    * Using merge operator to combine Observable : merge does not maintain
+    * the order of Observable.
+    * It will emit all the 7 values may not be in order
+    * Ex - "A1", "B1", "A2", "A3", "A4", "B2", "B3" - may be anything
     */
-    private fun executeDelayOperator() {
 
-        getObservable().delay(2, TimeUnit.SECONDS)
-                // Run on a background thread
-                .subscribeOn(Schedulers.io())
-                // Be notified on the main thread
-                .observeOn(AndroidSchedulers.mainThread())
+    private fun executeMergeOperator() {
+        val aStrings = arrayOf("A1", "A2", "A3", "A4")
+        val bStrings = arrayOf("B1", "B2", "B3")
+
+        val aObservable = Observable.fromArray(*aStrings)
+        val bObservable = Observable.fromArray(*bStrings)
+
+        Observable.merge(aObservable, bObservable)
                 .subscribe(getObserver())
-    }
 
-    private fun getObservable(): Observable<String> {
-        return Observable.just("Jitendra Kumar")
     }
 
     private fun getObserver(): Observer<String> {
@@ -69,5 +66,4 @@ class DelayOperatorActivity : AppCompatActivity() {
             }
         }
     }
-
 }
