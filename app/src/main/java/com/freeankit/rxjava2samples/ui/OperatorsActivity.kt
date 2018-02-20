@@ -129,4 +129,8 @@ class OperatorsActivity : AppCompatActivity() {
     fun startWindowActivity(view: View) {
         startActivity(Intent(this@OperatorsActivity, WindowOperatorActivity::class.java))
     }
+
+    fun startDelayActivity(view: View) {
+        startActivity(Intent(this@OperatorsActivity, DelayOperatorActivity::class.java))
+    }
 }
