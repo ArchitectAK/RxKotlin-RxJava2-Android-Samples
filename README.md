@@ -91,6 +91,7 @@ Adding more operator examples
 * [ThrottleLastOperatorActivity](https://github.com/AnkitDroidGit/RxJava-RxKotlin-Android-Samples/blob/master/app/src/main/java/com/freeankit/rxjava2samples/ui/operators/ThrottleLastOperatorActivity.kt) -Using `Throttle Last` Operator
 * [WindowOperatorActivity](https://github.com/AnkitDroidGit/RxJava-RxKotlin-Android-Samples/blob/master/app/src/main/java/com/freeankit/rxjava2samples/ui/operators/transformingOperatorsWindowOperatorActivity.kt) -Using `Window` Operator
 * [AmbOperatorActivity](https://github.com/AnkitDroidGit/RxJava-RxKotlin-Android-Samples/blob/master/app/src/main/java/com/freeankit/rxjava2samples/ui/operators/conditionalOperators/AmbOperatorActivity.kt) -Using `Amb` Operator
+* [DelayOperatorActivity](https://github.com/AnkitDroidGit/RxJava-RxKotlin-Android-Samples/blob/master/app/src/main/java/com/freeankit/rxjava2samples/ui/operators/utilityOperators/DelayOperatorActivity.kt) -Using `Delay` Operator
  
 * Coming More
 
