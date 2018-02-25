@@ -78,19 +78,19 @@ Adding more operator examples
 * [FilterOperatorActivity](https://github.com/AnkitDroidGit/RxJava-RxKotlin-Android-Samples/blob/master/app/src/main/java/com/freeankit/rxjava2samples/ui/operators/FilterOperatorActivity.kt) -Using `Filter` Operator 
 * [SkipOperatorActivity](https://github.com/AnkitDroidGit/RxJava-RxKotlin-Android-Samples/blob/master/app/src/main/java/com/freeankit/rxjava2samples/ui/operators/SkipOperatorActivity.kt) -Using `Skip` Operator 
 * [ScanOperatorActivity](https://github.com/AnkitDroidGit/RxJava-RxKotlin-Android-Samples/blob/master/app/src/main/java/com/freeankit/rxjava2samples/ui/operators/ScanOperatorActivity.kt) -Using `Scan` Operator
-* [ReplayOperatorActivity](https://github.com/AnkitDroidGit/RxJava-RxKotlin-Android-Samples/blob/master/app/src/main/java/com/freeankit/rxjava2samples/ui/operators/ReplayOperatorActivity.kt) -Using `Replay` Operator
+* [ReplayOperatorActivity](https://github.com/AnkitDroidGit/RxJava-RxKotlin-Android-Samples/blob/master/app/src/main/java/com/freeankit/rxjava2samples/ui/operators/connectableOperators/ReplayOperatorActivity.kt) -Using `Replay` Operator
 * [ConcatOperatorActivity](https://github.com/AnkitDroidGit/RxJava-RxKotlin-Android-Samples/blob/master/app/src/main/java/com/freeankit/rxjava2samples/ui/operators/ConcatOperatorActivity.kt) -Using `Concat` Operator
 * [MergeOperatorActivity](https://github.com/AnkitDroidGit/RxJava-RxKotlin-Android-Samples/blob/master/app/src/main/java/com/freeankit/rxjava2samples/ui/operators/combiningOperators/MergeOperatorActivity.kt) -Using `Merge` Operator
 * [DeferOperatorActivity](https://github.com/AnkitDroidGit/RxJava-RxKotlin-Android-Samples/blob/master/app/src/main/java/com/freeankit/rxjava2samples/ui/operators/DeferOperatorActivity.kt) -Using `Defer` Operator
 * [DistinctOperatorActivity](https://github.com/AnkitDroidGit/RxJava-RxKotlin-Android-Samples/blob/master/app/src/main/java/com/freeankit/rxjava2samples/ui/operators/DistinctOperatorActivity.kt) -Using `Distinct` Operator
-* [ReplaySubjectOperatorActivity](https://github.com/AnkitDroidGit/RxJava-RxKotlin-Android-Samples/blob/master/app/src/main/java/com/freeankit/rxjava2samples/ui/operators/ReplaySubjectOperatorActivity.kt) -Using `Replay Subject` Operator
-* [PublishSubjectOperatorActivity](https://github.com/AnkitDroidGit/RxJava-RxKotlin-Android-Samples/blob/master/app/src/main/java/com/freeankit/rxjava2samples/ui/operators/PublishSubjectOperatorActivity.kt) -Using `Publish Subject` Operator
+* [ReplaySubjectOperatorActivity](https://github.com/AnkitDroidGit/RxJava-RxKotlin-Android-Samples/blob/master/app/src/main/java/com/freeankit/rxjava2samples/ui/operators/connectableOperators/ReplaySubjectOperatorActivity.kt) -Using `Replay Subject` Operator
+* [PublishSubjectOperatorActivity](https://github.com/AnkitDroidGit/RxJava-RxKotlin-Android-Samples/blob/master/app/src/main/java/com/freeankit/rxjava2samples/ui/operators/connectableOperators/PublishSubjectOperatorActivity.kt) -Using `Publish Subject` Operator
 * [BehaviorSubjectActivity](https://github.com/AnkitDroidGit/RxJava-RxKotlin-Android-Samples/blob/master/app/src/main/java/com/freeankit/rxjava2samples/ui/operators/BehaviorSubjectActivity.kt) -Using `Behavior Subject` Operator
 * [AsyncSubjectOperatorActivity](https://github.com/AnkitDroidGit/RxJava-RxKotlin-Android-Samples/blob/master/app/src/main/java/com/freeankit/rxjava2samples/ui/operators/AsyncSubjectOperatorActivity.kt) -Using `Aync Subject` Operator
 * [ThrottleFirstOperatorActivity](https://github.com/AnkitDroidGit/RxJava-RxKotlin-Android-Samples/blob/master/app/src/main/java/com/freeankit/rxjava2samples/ui/operators/ThrottleFirstOperatorActivity.kt) -Using `Throttle First` Operator
 * [ThrottleLastOperatorActivity](https://github.com/AnkitDroidGit/RxJava-RxKotlin-Android-Samples/blob/master/app/src/main/java/com/freeankit/rxjava2samples/ui/operators/ThrottleLastOperatorActivity.kt) -Using `Throttle Last` Operator
 * [WindowOperatorActivity](https://github.com/AnkitDroidGit/RxJava-RxKotlin-Android-Samples/blob/master/app/src/main/java/com/freeankit/rxjava2samples/ui/operators/WindowOperatorActivity.kt) -Using `Window` Operator
-* [AmbOperatorActivity](https://github.com/AnkitDroidGit/RxJava-RxKotlin-Android-Samples/blob/master/app/src/main/java/com/freeankit/rxjava2samples/ui/operators/AmbOperatorActivity.kt) -Using `Window` Operator
+* [AmbOperatorActivity](https://github.com/AnkitDroidGit/RxJava-RxKotlin-Android-Samples/blob/master/app/src/main/java/com/freeankit/rxjava2samples/ui/operators/conditionalOperators/AmbOperatorActivity.kt) -Using `Window` Operator
  
 * Coming More
 
