@@ -64,7 +64,7 @@ Adding more operator examples
 ## Highlights :
 * [SimpleOperatorActivity](https://github.com/AnkitDroidGit/RxJava-RxKotlin-Android-Samples/blob/master/app/src/main/java/com/freeankit/rxjava2samples/ui/operators/SimpleOperatorActivity.kt) - Using `Simple` operator
 * [MapOperatorActivity](https://github.com/AnkitDroidGit/RxJava-RxKotlin-Android-Samples/blob/master/app/src/main/java/com/freeankit/rxjava2samples/ui/operators/MapOperatorActivity.kt) - Using `Map` operator
-* [ZipOperatorActivity](https://github.com/AnkitDroidGit/RxJava-RxKotlin-Android-Samples/blob/master/app/src/main/java/com/freeankit/rxjava2samples/ui/operators/ZipOperatorActivity.kt) - Using `Zip` observer
+* [ZipOperatorActivity](https://github.com/AnkitDroidGit/RxJava-RxKotlin-Android-Samples/blob/master/app/src/main/java/com/freeankit/rxjava2samples/ui/operators/combiningOperators/ZipOperatorActivity.kt) - Using `Zip` observer
 * [DisposableOperatorActivity](https://github.com/AnkitDroidGit/RxJava-RxKotlin-Android-Samples/blob/master/app/src/main/java/com/freeankit/rxjava2samples/ui/operators/DisposableOperatorActivity.kt) - Using `Disposable` operator
 * [FlatMapOperatorActivity](https://github.com/AnkitDroidGit/RxJava-RxKotlin-Android-Samples/blob/master/app/src/main/java/com/freeankit/rxjava2samples/ui/operators/FlatMapOperatorActivity.kt) - Using `FlatMap` Operator
 * [IntervalOperatorActivity](https://github.com/AnkitDroidGit/RxJava-RxKotlin-Android-Samples/blob/master/app/src/main/java/com/freeankit/rxjava2samples/ui/operators/IntervalOperatorActivity.kt) - Using `Interval` Operator
@@ -80,7 +80,7 @@ Adding more operator examples
 * [ScanOperatorActivity](https://github.com/AnkitDroidGit/RxJava-RxKotlin-Android-Samples/blob/master/app/src/main/java/com/freeankit/rxjava2samples/ui/operators/ScanOperatorActivity.kt) -Using `Scan` Operator
 * [ReplayOperatorActivity](https://github.com/AnkitDroidGit/RxJava-RxKotlin-Android-Samples/blob/master/app/src/main/java/com/freeankit/rxjava2samples/ui/operators/ReplayOperatorActivity.kt) -Using `Replay` Operator
 * [ConcatOperatorActivity](https://github.com/AnkitDroidGit/RxJava-RxKotlin-Android-Samples/blob/master/app/src/main/java/com/freeankit/rxjava2samples/ui/operators/ConcatOperatorActivity.kt) -Using `Concat` Operator
-* [MergeOperatorActivity](https://github.com/AnkitDroidGit/RxJava-RxKotlin-Android-Samples/blob/master/app/src/main/java/com/freeankit/rxjava2samples/ui/operators/MergeOperatorActivity.kt) -Using `Merge` Operator
+* [MergeOperatorActivity](https://github.com/AnkitDroidGit/RxJava-RxKotlin-Android-Samples/blob/master/app/src/main/java/com/freeankit/rxjava2samples/ui/operators/combiningOperators/MergeOperatorActivity.kt) -Using `Merge` Operator
 * [DeferOperatorActivity](https://github.com/AnkitDroidGit/RxJava-RxKotlin-Android-Samples/blob/master/app/src/main/java/com/freeankit/rxjava2samples/ui/operators/DeferOperatorActivity.kt) -Using `Defer` Operator
 * [DistinctOperatorActivity](https://github.com/AnkitDroidGit/RxJava-RxKotlin-Android-Samples/blob/master/app/src/main/java/com/freeankit/rxjava2samples/ui/operators/DistinctOperatorActivity.kt) -Using `Distinct` Operator
 * [ReplaySubjectOperatorActivity](https://github.com/AnkitDroidGit/RxJava-RxKotlin-Android-Samples/blob/master/app/src/main/java/com/freeankit/rxjava2samples/ui/operators/ReplaySubjectOperatorActivity.kt) -Using `Replay Subject` Operator
@@ -90,6 +90,7 @@ Adding more operator examples
 * [ThrottleFirstOperatorActivity](https://github.com/AnkitDroidGit/RxJava-RxKotlin-Android-Samples/blob/master/app/src/main/java/com/freeankit/rxjava2samples/ui/operators/ThrottleFirstOperatorActivity.kt) -Using `Throttle First` Operator
 * [ThrottleLastOperatorActivity](https://github.com/AnkitDroidGit/RxJava-RxKotlin-Android-Samples/blob/master/app/src/main/java/com/freeankit/rxjava2samples/ui/operators/ThrottleLastOperatorActivity.kt) -Using `Throttle Last` Operator
 * [WindowOperatorActivity](https://github.com/AnkitDroidGit/RxJava-RxKotlin-Android-Samples/blob/master/app/src/main/java/com/freeankit/rxjava2samples/ui/operators/WindowOperatorActivity.kt) -Using `Window` Operator
+* [AmbOperatorActivity](https://github.com/AnkitDroidGit/RxJava-RxKotlin-Android-Samples/blob/master/app/src/main/java/com/freeankit/rxjava2samples/ui/operators/AmbOperatorActivity.kt) -Using `Window` Operator
  
 * Coming More
 
