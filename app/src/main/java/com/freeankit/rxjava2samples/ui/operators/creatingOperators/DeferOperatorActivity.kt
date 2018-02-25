@@ -34,8 +34,7 @@ class DeferOperatorActivity : AppCompatActivity() {
         // we will get the brand as Harley Davidson.
         // If we had not used defer, we would have got null as the brand.
 
-        brandDeferObservable
-                .subscribe(getObserver())
+        brandDeferObservable.subscribe(getObserver())
 
     }
 

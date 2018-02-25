@@ -47,6 +47,8 @@
         <activity android:name=".ui.operators.ThrottleLastOperatorActivity" />
         <activity android:name=".ui.operators.transformingOperators.WindowOperatorActivity" />
         <activity android:name=".ui.operators.utilityOperators.DelayOperatorActivity" />
+        <activity android:name=".ui.operators.creatingOperators.CreateOperatorActivity" />
+        <activity android:name=".ui.operators.conditionalOperators.AmbOperatorActivity" />
     </application>
 
 </manifest>
