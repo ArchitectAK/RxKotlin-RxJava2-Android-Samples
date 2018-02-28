@@ -55,6 +55,7 @@ If you are using RxAndroid also, then add the following
 * `Aync Subject` -> A Subject that emits the very last value followed by a completion event or the received error to Observers.
 * `Throttle First` -> Emit the first items emitted by an Observable within periodic time intervals
 * `amb()` -> given two or more source Observables, emits all of the items from the first of these Observables to emit an item
+* `Catch` -> recover from an onError notification by continuing the sequence without error
 
 * Coming More
 ## TODO
