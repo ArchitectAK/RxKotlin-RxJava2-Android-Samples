@@ -49,6 +49,7 @@
         <activity android:name=".ui.operators.utilityOperators.DelayOperatorActivity" />
         <activity android:name=".ui.operators.creatingOperators.CreateOperatorActivity" />
         <activity android:name=".ui.operators.conditionalOperators.AmbOperatorActivity" />
+        <activity android:name=".ui.operators.RepeatWhenOperator" />
     </application>
 
 </manifest>
