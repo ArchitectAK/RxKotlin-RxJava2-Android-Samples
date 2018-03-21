@@ -54,9 +54,9 @@ If you are using RxAndroid also, then add the following
 * `Behaviour Subject` -> Subject that emits the most recent item it has observed and all subsequent observed items to each subscribed Observer.
 * `Aync Subject` -> A Subject that emits the very last value followed by a completion event or the received error to Observers.
 * `Throttle First` -> Emit the first items emitted by an Observable within periodic time intervals
-* `amb()` -> given two or more source Observables, emits all of the items from the first of these Observables to emit an item
-* `Catch` -> recover from an onError notification by continuing the sequence without error
-* `Retry` -> if a source Observable emits an error, resubscribe to it in the hopes that it will complete without error
+* `amb()` -> Given two or more source Observables, emits all of the items from the first of these Observables to emit an item
+* `Catch` -> Recover from an onError notification by continuing the sequence without error
+* `Retry` -> If a source Observable emits an error, resubscribe to it in the hopes that it will complete without error
 
 * Coming More
 ## TODO
