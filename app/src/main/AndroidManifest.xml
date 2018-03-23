@@ -51,6 +51,7 @@
         <activity android:name=".ui.operators.conditionalOperators.AmbOperatorActivity" />
         <activity android:name=".ui.operators.RepeatWhenOperator" />
         <activity android:name=".ui.operators.combiningOperators.ConcatOperatorActivity" />
+        <activity android:name=".ui.operators.combiningOperators.CombineLatestOperatorActivity" />
     </application>
 
 </manifest>
