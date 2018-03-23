@@ -5,10 +5,8 @@ import android.support.v7.app.AppCompatActivity
 import android.util.Log
 import com.freeankit.rxjava2samples.R
 import com.freeankit.rxjava2samples.utils.Constant
-import io.reactivex.Observable
 import io.reactivex.Observer
 import io.reactivex.disposables.Disposable
-import io.reactivex.schedulers.Schedulers
 import io.reactivex.subjects.PublishSubject
 import kotlinx.android.synthetic.main.activity_example_operator.*
 import java.lang.System.err
