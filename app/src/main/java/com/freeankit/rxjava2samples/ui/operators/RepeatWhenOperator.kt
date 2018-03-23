@@ -39,9 +39,11 @@ class RepeatWhenOperator : AppCompatActivity() {
 //
 //        source.onNext(4)
 //        source.onComplete()
-        source.doOnError(err -> showConnectionDialog())
-        source.retryWhen(retryHandler -> retryHandler.flatMap(nothing -> retrySubject.asObservable()))
-        source.subscribe(result -> getSecondObserver())
+
+
+//        source.doOnError(err -> showConnectionDialog())
+//        source.retryWhen(retryHandler -> retryHandler.flatMap(nothing -> retrySubject.asObservable()))
+//        source.subscribe(result -> getSecondObserver())
         source.onComplete()
     }
 
