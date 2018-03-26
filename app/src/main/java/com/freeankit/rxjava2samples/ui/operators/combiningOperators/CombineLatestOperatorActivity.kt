@@ -9,7 +9,6 @@ import io.reactivex.Observable
 import io.reactivex.Observer
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.Disposable
-import io.reactivex.functions.BiFunction
 import kotlinx.android.synthetic.main.activity_example_operator.*
 
 /**
@@ -27,11 +26,12 @@ class CombineLatestOperatorActivity : AppCompatActivity() {
         val builder = StringBuilder()
         //combine two observables
         //notice the sizes of Observables and the output
-        Observable
-                .combineLatest(
+
+
+        Observable.combineLatest(
                         getBoyNames(),
                         getRollNumber(),
-                        BiFunction { s, integer -> s + " -> " + integer })
+                        { s, i -> s + " -> " + i })
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(object : Observer<String> {
                     internal lateinit var d: Disposable
