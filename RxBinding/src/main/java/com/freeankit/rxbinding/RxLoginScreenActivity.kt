@@ -8,14 +8,14 @@ import io.reactivex.Observable
 import io.reactivex.ObservableTransformer
 import io.reactivex.Single
 import io.reactivex.android.schedulers.AndroidSchedulers
-import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.activity_rx_login_screen.*
 import java.util.concurrent.TimeUnit
 
-class MainActivity : AppCompatActivity() {
+class RxLoginScreenActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_rx_login_screen)
 
         RxTextView.afterTextChangeEvents(editTextEmail)
                 .skipInitialValue()
