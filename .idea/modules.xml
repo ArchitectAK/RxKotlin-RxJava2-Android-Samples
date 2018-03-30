@@ -8,7 +8,7 @@
       <module fileurl="file://$PROJECT_DIR$/RxKotlinOperators.iml" filepath="$PROJECT_DIR$/RxKotlinOperators.iml" />
       <module fileurl="file://D:\Ankit\downloads\RxJava2Samples\RxKotlinOperators.iml" filepath="D:\Ankit\downloads\RxJava2Samples\RxKotlinOperators.iml" />
       <module fileurl="file://$PROJECT_DIR$/RxOperators/RxOperators.iml" filepath="$PROJECT_DIR$/RxOperators/RxOperators.iml" />
-      <module fileurl="file://$PROJECT_DIR$/rxbinding/rxbinding.iml" filepath="$PROJECT_DIR$/rxbinding/rxbinding.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RxBinding/rxbinding.iml" filepath="$PROJECT_DIR$/RxBinding/rxbinding.iml" />
     </modules>
   </component>
 </project>
