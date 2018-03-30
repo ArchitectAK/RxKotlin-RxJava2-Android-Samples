@@ -8,8 +8,8 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/RxBinding" />
             <option value="$PROJECT_DIR$/RxOperators" />
-            <option value="$PROJECT_DIR$/rxbinding" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
