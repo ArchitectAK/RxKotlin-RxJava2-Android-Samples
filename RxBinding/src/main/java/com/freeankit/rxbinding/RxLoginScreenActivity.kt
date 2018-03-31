@@ -66,6 +66,8 @@ class RxLoginScreenActivity : AppCompatActivity() {
                         }
                     }
                     .toObservable()
+
+
         }
     }
 
