@@ -50,6 +50,8 @@ class RxLoginScreenActivity : AppCompatActivity() {
                 onError(it)
                 Observable.just("")
             }
+
+
         }
     }
 
