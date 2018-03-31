@@ -99,29 +99,6 @@ Adding more operator examples
 * Coming More
 
 
-
-
-
-# RxBinding
-
-Rx is powerful because we can compose transformations. What that means is that we can have reusable, safe and more functional code that simply plugs into your code.
-
-As an example let’s say we’re making a login screen with an email and a password…
-
-Consider the following rules that we want for our email addresses
-
-- Length should be greater than 6
-- Should have a correct email pattern
-- Let the user know if any of the above fails
-- On each key stroke, verify
-
-
-## Highlights :
-* [RxLoginScreenActivity](https://github.com/AnkitDroidGit/RxKotlinOperators-Android/blob/master/RxBinding/src/main/java/com/freeankit/rxbinding/RxLoginScreenActivity.kt) - Login Screen using RxBinding
-
-
-
-
 ### Contact - Let's connect to learn together
 - [Twitter](https://twitter.com/KumarAnkitRKE)
 - [Github](https://github.com/AnkitDroidGit)

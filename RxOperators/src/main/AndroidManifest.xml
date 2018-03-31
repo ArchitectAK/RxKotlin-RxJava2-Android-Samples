@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.freeankit.rxjava2samples">
+    package="com.freeankit.rxkotlinoperators">
 
     <application
         android:allowBackup="true"
@@ -9,49 +9,49 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.SelectionActivity">
+        <activity android:name="com.freeankit.rxkotlinoperators.ui.SelectionActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.OperatorsActivity" />
-        <activity android:name=".ui.RxOperators.SimpleOperatorActivity" />
-        <activity android:name=".ui.RxOperators.transformingOperators.MapOperatorActivity" />
-        <activity android:name=".ui.RxOperators.combiningOperators.ZipOperatorActivity" />
-        <activity android:name=".ui.RxOperators.DisposableOperatorActivity" />
-        <activity android:name=".ui.RxOperators.filteringOperators.TakeOperatorActivity" />
-        <activity android:name=".ui.RxOperators.TimerOperatorActivity" />
-        <activity android:name=".ui.RxOperators.transformingOperators.FlatMapOperatorActivity" />
-        <activity android:name=".ui.RxOperators.creatingOperators.IntervalOperatorActivity" />
-        <activity android:name=".ui.RxOperators.filteringOperators.DebounceOperatorActivity" />
-        <activity android:name=".ui.RxOperators.SingleObserverOperatorActivity" />
-        <activity android:name=".ui.RxOperators.CompletableObserverOperatorActivity" />
-        <activity android:name=".ui.RxOperators.FlowableOperatorActivity" />
-        <activity android:name=".ui.RxOperators.mathematicalOperators.ReduceOperatorActivity" />
-        <activity android:name=".ui.RxOperators.transformingOperators.BufferOperatorActivity" />
-        <activity android:name=".ui.RxOperators.filteringOperators.FilterOperatorActivity" />
-        <activity android:name=".ui.RxOperators.filteringOperators.SkipOperatorActivity" />
-        <activity android:name=".ui.RxOperators.transformingOperators.ScanOperatorActivity" />
-        <activity android:name=".ui.RxOperators.connectableOperators.ReplayOperatorActivity" />
-        <activity android:name=".ui.RxOperators.mathematicalOperators.ConcatOperatorActivity" />
-        <activity android:name=".ui.RxOperators.combiningOperators.MergeOperatorActivity" />
-        <activity android:name=".ui.RxOperators.creatingOperators.DeferOperatorActivity" />
-        <activity android:name=".ui.RxOperators.filteringOperators.DistinctOperatorActivity" />
-        <activity android:name=".ui.RxOperators.connectableOperators.ReplaySubjectOperatorActivity" />
-        <activity android:name=".ui.RxOperators.connectableOperators.PublishSubjectOperatorActivity" />
-        <activity android:name=".ui.RxOperators.BehaviorSubjectActivity" />
-        <activity android:name=".ui.RxOperators.AsyncSubjectOperatorActivity" />
-        <activity android:name=".ui.RxOperators.ThrottleFirstOperatorActivity" />
-        <activity android:name=".ui.RxOperators.ThrottleLastOperatorActivity" />
-        <activity android:name=".ui.RxOperators.transformingOperators.WindowOperatorActivity" />
-        <activity android:name=".ui.RxOperators.utilityOperators.DelayOperatorActivity" />
+        <activity android:name="com.freeankit.rxkotlinoperators.ui.OperatorsActivity" />
+        <activity android:name="com.freeankit.rxkotlinoperators.ui.RxOperators.SimpleOperatorActivity" />
+        <activity android:name="com.freeankit.rxkotlinoperators.ui.RxOperators.transformingOperators.MapOperatorActivity" />
+        <activity android:name="com.freeankit.rxkotlinoperators.ui.RxOperators.combiningOperators.ZipOperatorActivity" />
+        <activity android:name="com.freeankit.rxkotlinoperators.ui.RxOperators.DisposableOperatorActivity" />
+        <activity android:name="com.freeankit.rxkotlinoperators.ui.RxOperators.filteringOperators.TakeOperatorActivity" />
+        <activity android:name="com.freeankit.rxkotlinoperators.ui.RxOperators.TimerOperatorActivity" />
+        <activity android:name="com.freeankit.rxkotlinoperators.ui.RxOperators.transformingOperators.FlatMapOperatorActivity" />
+        <activity android:name="com.freeankit.rxkotlinoperators.ui.RxOperators.creatingOperators.IntervalOperatorActivity" />
+        <activity android:name="com.freeankit.rxkotlinoperators.ui.RxOperators.filteringOperators.DebounceOperatorActivity" />
+        <activity android:name="com.freeankit.rxkotlinoperators.ui.RxOperators.SingleObserverOperatorActivity" />
+        <activity android:name="com.freeankit.rxkotlinoperators.ui.RxOperators.CompletableObserverOperatorActivity" />
+        <activity android:name="com.freeankit.rxkotlinoperators.ui.RxOperators.FlowableOperatorActivity" />
+        <activity android:name="com.freeankit.rxkotlinoperators.ui.RxOperators.mathematicalOperators.ReduceOperatorActivity" />
+        <activity android:name="com.freeankit.rxkotlinoperators.ui.RxOperators.transformingOperators.BufferOperatorActivity" />
+        <activity android:name="com.freeankit.rxkotlinoperators.ui.RxOperators.filteringOperators.FilterOperatorActivity" />
+        <activity android:name="com.freeankit.rxkotlinoperators.ui.RxOperators.filteringOperators.SkipOperatorActivity" />
+        <activity android:name="com.freeankit.rxkotlinoperators.ui.RxOperators.transformingOperators.ScanOperatorActivity" />
+        <activity android:name="com.freeankit.rxkotlinoperators.ui.RxOperators.connectableOperators.ReplayOperatorActivity" />
+        <activity android:name="com.freeankit.rxkotlinoperators.ui.RxOperators.mathematicalOperators.ConcatOperatorActivity" />
+        <activity android:name="com.freeankit.rxkotlinoperators.ui.RxOperators.combiningOperators.MergeOperatorActivity" />
+        <activity android:name="com.freeankit.rxkotlinoperators.ui.RxOperators.creatingOperators.DeferOperatorActivity" />
+        <activity android:name="com.freeankit.rxkotlinoperators.ui.RxOperators.filteringOperators.DistinctOperatorActivity" />
+        <activity android:name="com.freeankit.rxkotlinoperators.ui.RxOperators.connectableOperators.ReplaySubjectOperatorActivity" />
+        <activity android:name="com.freeankit.rxkotlinoperators.ui.RxOperators.connectableOperators.PublishSubjectOperatorActivity" />
+        <activity android:name="com.freeankit.rxkotlinoperators.ui.RxOperators.BehaviorSubjectActivity" />
+        <activity android:name="com.freeankit.rxkotlinoperators.ui.RxOperators.AsyncSubjectOperatorActivity" />
+        <activity android:name="com.freeankit.rxkotlinoperators.ui.RxOperators.ThrottleFirstOperatorActivity" />
+        <activity android:name="com.freeankit.rxkotlinoperators.ui.RxOperators.ThrottleLastOperatorActivity" />
+        <activity android:name="com.freeankit.rxkotlinoperators.ui.RxOperators.transformingOperators.WindowOperatorActivity" />
+        <activity android:name="com.freeankit.rxkotlinoperators.ui.RxOperators.utilityOperators.DelayOperatorActivity" />
         <activity android:name=".ui.RxOperators.creatingOperators.CreateOperatorActivity" />
-        <activity android:name=".ui.RxOperators.conditionalOperators.AmbOperatorActivity" />
-        <activity android:name=".ui.RxOperators.RepeatWhenOperator" />
+        <activity android:name="com.freeankit.rxkotlinoperators.ui.RxOperators.conditionalOperators.AmbOperatorActivity" />
+        <activity android:name="com.freeankit.rxkotlinoperators.ui.RxOperators.RepeatWhenOperator" />
         <activity android:name=".ui.RxOperators.combiningOperators.ConcatOperatorActivity" />
-        <activity android:name=".ui.RxOperators.combiningOperators.CombineLatestOperatorActivity" />
+        <activity android:name="com.freeankit.rxkotlinoperators.ui.RxOperators.combiningOperators.CombineLatestOperatorActivity" />
     </application>
 
 </manifest>
