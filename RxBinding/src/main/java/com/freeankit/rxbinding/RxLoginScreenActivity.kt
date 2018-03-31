@@ -60,7 +60,7 @@ class RxLoginScreenActivity : AppCompatActivity() {
                     .singleOrError()
                     .onErrorResumeNext {
                         if (it is NoSuchElementException) {
-                            Single.error(Exception("Length should be greater than 6"))
+                            Single.error(Exception("Length must be greater than 6"))
                         } else {
                             Single.error(it)
                         }
