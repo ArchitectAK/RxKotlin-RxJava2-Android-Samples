@@ -51,7 +51,6 @@ class RxLoginScreenActivity : AppCompatActivity() {
                 Observable.just("")
             }
 
-
         }
     }
 
