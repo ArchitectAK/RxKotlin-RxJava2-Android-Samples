@@ -28,7 +28,9 @@ class FlowableOperatorActivity : AppCompatActivity() {
     private fun executeFlowableOperator() {
 
         val observable = Flowable.just(1, 2, 3, 4)
-        observable.reduce(50) { t1, t2 -> t1 + t2 }.subscribe(getObserver())
+        observable
+                .reduce(50) { t1, t2 -> t1 + t2 }
+                .subscribe(getObserver())
 
     }
 
@@ -43,9 +45,9 @@ class FlowableOperatorActivity : AppCompatActivity() {
             }
 
             override fun onSuccess(value: Int) {
-                textView.append(" onSuccess : value : " + value)
+                textView.append(" onSuccess : value : $value")
                 textView.append(Constant().LINE_SEPARATOR)
-                Log.d(Constant().TAG, " onSuccess : value : " + value)
+                Log.d(Constant().TAG, " onSuccess : value : $value")
             }
 
             override fun onError(e: Throwable) {
