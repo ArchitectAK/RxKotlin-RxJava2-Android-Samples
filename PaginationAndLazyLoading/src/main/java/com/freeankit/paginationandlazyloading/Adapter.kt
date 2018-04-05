@@ -1,6 +1,5 @@
 package com.freeankit.paginationandlazyloading
 
-import android.content.Context
 import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
@@ -13,7 +12,7 @@ import android.widget.TextView
  */
 class Adapter : RecyclerView.Adapter<Adapter.ViewHolder>() {
 
-    private val items: MutableList<String> = emptyList<String>() as MutableList<String>
+    private val items: MutableList<String> = ArrayList()
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val v = LayoutInflater.from(parent.context).inflate(R.layout.layout_adapter_item, parent, false)
