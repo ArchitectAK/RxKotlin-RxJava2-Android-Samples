@@ -120,6 +120,14 @@ Consider the following rules that we want for our email addresses
 * [RxLoginScreenActivity](https://github.com/AnkitDroidGit/RxKotlinOperators-Android/blob/master/RxBinding/src/main/java/com/freeankit/rxbinding/RxLoginScreenActivity.kt) - Login Screen using RxBinding
 
 
+# Pagination And Lazyloading using RxKotlin
+
+
+## Highlights :
+* [MainActivity](https://github.com/AnkitDroidGit/RxKotlinOperators-Android/blob/master/PaginationAndLazyLoading/src/main/java/com/freeankit/paginationandlazyloading/MainActivity.kt) - Activity containing recyclerview and data.
+* [Adapter](https://github.com/AnkitDroidGit/RxKotlinOperators-Android/blob/master/PaginationAndLazyLoading/src/main/java/com/freeankit/paginationandlazyloading/Adapter.kt) - Adapter containing layout item
+
+
 
 
 ### Contact - Let's connect to learn together
