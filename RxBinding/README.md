@@ -12,10 +12,11 @@ Consider the following rules that we want for our email addresses
 - On each key stroke, verify
 
 
+
 ## Highlights :
 * [RxLoginScreenActivity](https://github.com/AnkitDroidGit/RxKotlinOperators-Android/blob/master/RxBinding/src/main/java/com/freeankit/rxbinding/RxLoginScreenActivity.kt) - Login Screen using RxBinding
 
-
+![](https://github.com/AnkitDroidGit/RxKotlinOperators-Android/blob/master/RxBinding/art/gif.gif)
 
 
 ### Contact - Let's connect to learn together
