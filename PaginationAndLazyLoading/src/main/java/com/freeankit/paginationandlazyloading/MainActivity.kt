@@ -91,7 +91,7 @@ class MainActivity : AppCompatActivity() {
                 .map({
                     val items = ArrayList<String>()
                     for (i in 1..10) {
-                        items.add("Item " + (page * 10 + i))
+                        items.add("ListItem " + (page * 10 + i))
                     }
                     items
                 })

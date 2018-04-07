@@ -14,7 +14,7 @@ import kotlinx.android.synthetic.main.activity_example_operator.*
 /**
  * @author Ankit Kumar (ankitdroiddeveloper@gmail.com) on 28/02/2018 (MM/DD/YYYY)
  */
-class RepeatWhenOperator : AppCompatActivity() {
+class RepeatWhenOperatorActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_example_operator)

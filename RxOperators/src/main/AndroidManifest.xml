@@ -49,7 +49,7 @@
         <activity android:name="com.freeankit.rxkotlinoperators.ui.RxOperators.utilityOperators.DelayOperatorActivity" />
         <activity android:name=".ui.RxOperators.creatingOperators.CreateOperatorActivity" />
         <activity android:name="com.freeankit.rxkotlinoperators.ui.RxOperators.conditionalOperators.AmbOperatorActivity" />
-        <activity android:name="com.freeankit.rxkotlinoperators.ui.RxOperators.RepeatWhenOperator" />
+        <activity android:name="com.freeankit.rxkotlinoperators.ui.RxOperators.RepeatWhenOperatorActivity" />
         <activity android:name=".ui.RxOperators.combiningOperators.ConcatOperatorActivity" />
         <activity android:name="com.freeankit.rxkotlinoperators.ui.RxOperators.combiningOperators.CombineLatestOperatorActivity" />
     </application>

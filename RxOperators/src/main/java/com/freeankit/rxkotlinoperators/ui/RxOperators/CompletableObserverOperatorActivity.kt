@@ -19,6 +19,7 @@ import java.util.concurrent.TimeUnit
 class CompletableObserverOperatorActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
         setContentView(R.layout.activity_example_operator)
 
         btn.setOnClickListener({ executeCompletableObserverOperator() })
