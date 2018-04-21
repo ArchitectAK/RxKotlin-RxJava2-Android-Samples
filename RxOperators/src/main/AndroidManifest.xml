@@ -52,6 +52,8 @@
         <activity android:name="com.freeankit.rxkotlinoperators.ui.RxOperators.RepeatWhenOperatorActivity" />
         <activity android:name=".ui.RxOperators.combiningOperators.ConcatOperatorActivity" />
         <activity android:name="com.freeankit.rxkotlinoperators.ui.RxOperators.combiningOperators.CombineLatestOperatorActivity" />
+        <activity android:name=".ui.RxPagination.PaginationActivity" />
+        <activity android:name=".ui.RxBinding.RxLoginScreenActivity" />
     </application>
 
 </manifest>

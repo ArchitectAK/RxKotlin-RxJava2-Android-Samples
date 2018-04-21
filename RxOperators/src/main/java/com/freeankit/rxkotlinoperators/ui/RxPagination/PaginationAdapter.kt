@@ -1,16 +1,17 @@
-package com.freeankit.paginationandlazyloading
+package com.freeankit.rxkotlinoperators.ui.RxPagination
 
 import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import com.freeankit.rxkotlinoperators.R
 
 
 /**
  * @author Ankit Kumar (ankitdroiddeveloper@gmail.com) on 04/04/2018 (MM/DD/YYYY)
  */
-class Adapter : RecyclerView.Adapter<Adapter.ViewHolder>() {
+class PaginationAdapter : RecyclerView.Adapter<PaginationAdapter.ViewHolder>() {
 
     private val items: MutableList<String> = ArrayList()
 

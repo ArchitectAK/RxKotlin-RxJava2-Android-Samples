@@ -1,10 +1,10 @@
 <resources>
-    <string name="app_name">RxKotlin2Samples</string>
+    <string name="app_name">RxAndroid</string>
     <string name="simple">Simple</string>
     <string name="map">Map</string>
     <string name="zip">Zip</string>
-    <string name="click_here_to_execute">Click to Execute</string>
-    <string name="operators">Operators</string>
+    <string name="click_here_to_execute">Tap to Execute</string>
+    <string name="operators">RxOperators</string>
     <string name="disposable">Disposable</string>
     <string name="flatmap">FlatMap</string>
     <string name="interval">Interval</string>
@@ -31,4 +31,6 @@
     <string name="throttle_last">Throttle Last</string>
     <string name="window">Window</string>
     <string name="delay">Delay</string>
+    <string name="rxpagination">RxPagination</string>
+    <string name="rxbinding">RxBinding</string>
 </resources>

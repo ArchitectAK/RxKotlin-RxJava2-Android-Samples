@@ -11,7 +11,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical">
 
         <Button
@@ -19,7 +19,23 @@
             android:layout_height="wrap_content"
             android:onClick="startOperatorsActivity"
             android:text="@string/operators"
+            android:textAllCaps="false"
             android:textColor="@android:color/black" />
 
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="startRxBinding"
+            android:text="@string/rxbinding"
+            android:textAllCaps="false"
+            android:textColor="@android:color/black" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="startRxPagination"
+            android:text="@string/rxpagination"
+            android:textAllCaps="false"
+            android:textColor="@android:color/black" />
     </LinearLayout>
 </ScrollView>

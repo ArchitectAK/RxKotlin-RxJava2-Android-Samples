@@ -1,8 +1,9 @@
-package com.freeankit.rxbinding
+package com.freeankit.rxkotlinoperators.ui.RxBinding
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Patterns
+import com.freeankit.rxkotlinoperators.R
 import com.jakewharton.rxbinding2.widget.RxTextView
 import io.reactivex.Observable
 import io.reactivex.ObservableTransformer
