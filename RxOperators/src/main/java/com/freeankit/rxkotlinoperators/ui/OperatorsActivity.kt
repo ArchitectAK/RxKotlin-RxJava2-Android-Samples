@@ -13,6 +13,7 @@ import com.freeankit.rxkotlinoperators.ui.RxOperators.connectableOperators.Repla
 import com.freeankit.rxkotlinoperators.ui.RxOperators.connectableOperators.ReplaySubjectOperatorActivity
 import com.freeankit.rxkotlinoperators.ui.RxOperators.creatingOperators.DeferOperatorActivity
 import com.freeankit.rxkotlinoperators.ui.RxOperators.creatingOperators.IntervalOperatorActivity
+import com.freeankit.rxkotlinoperators.ui.RxOperators.errorHandlingOperators.RetryOperatorActivity
 import com.freeankit.rxkotlinoperators.ui.RxOperators.filteringOperators.*
 import com.freeankit.rxkotlinoperators.ui.RxOperators.mathematicalOperators.ConcatOperatorActivity
 import com.freeankit.rxkotlinoperators.ui.RxOperators.mathematicalOperators.ReduceOperatorActivity
@@ -146,5 +147,9 @@ class OperatorsActivity : AppCompatActivity() {
 
     fun startDelayActivity(view: View) {
         startActivity(Intent(this@OperatorsActivity, DelayOperatorActivity::class.java))
+    }
+
+    fun startRetryActivity(view: View) {
+        startActivity(Intent(this@OperatorsActivity, RetryOperatorActivity::class.java))
     }
 }

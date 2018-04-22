@@ -103,7 +103,6 @@ Adding more operator examples
 
 
 
-
 # RxBinding
 
 Rx is powerful because we can compose transformations. What that means is that we can have reusable, safe and more functional code that simply plugs into your code.
@@ -122,13 +121,12 @@ Consider the following rules that we want for our email addresses
 * [RxLoginScreenActivity](https://github.com/AnkitDroidGit/RxKotlinOperators-Android/blob/master/RxOperators/src/main/java/com/freeankit/rxkotlinoperators/ui/RxBinding/RxLoginScreenActivity.kt) - Login Screen using RxBinding
 
 
-# Pagination And Lazyloading using RxKotlin
+# Pagination And Lazy loading using RxKotlin
 
 
 ## Highlights :
 * [PaginationActivity](https://github.com/AnkitDroidGit/RxKotlinOperators-Android/blob/master/RxOperators/src/main/java/com/freeankit/rxkotlinoperators/ui/RxPagination/PaginationActivity.kt) - Activity containing recyclerview and data.
 * [PaginationAdapter](https://github.com/AnkitDroidGit/RxKotlinOperators-Android/blob/master/RxOperators/src/main/java/com/freeankit/rxkotlinoperators/ui/RxPagination/PaginationAdapter.kt) - Adapter containing layout item
-
 
 
 
