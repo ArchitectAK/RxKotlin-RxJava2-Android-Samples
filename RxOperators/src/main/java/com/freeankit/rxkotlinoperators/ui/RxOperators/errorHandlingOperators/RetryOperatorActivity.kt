@@ -30,7 +30,7 @@ class RetryOperatorActivity : AppCompatActivity() {
     private fun executeRetryOperator() {
         getObservable()
                 .retry()
-//                .retryWhen(o -> o.delay(100, TimeUnit.MILLISECONDS))
+//                .retryWhen(source -> source.delay(100, TimeUnit.MILLISECONDS))
                 .debounce(500, TimeUnit.MILLISECONDS)
                 // Run on a background thread
                 .subscribeOn(Schedulers.io())

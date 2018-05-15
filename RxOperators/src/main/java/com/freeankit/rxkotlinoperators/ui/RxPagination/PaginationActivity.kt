@@ -44,10 +44,8 @@ class PaginationActivity : AppCompatActivity() {
 
     private fun setUpLoadMoreListener() {
         recyclerView.addOnScrollListener(object : RecyclerView.OnScrollListener() {
-            override fun onScrolled(recyclerView: RecyclerView,
-                                    dx: Int, dy: Int) {
+            override fun onScrolled(recyclerView: RecyclerView, dx: Int, dy: Int) {
                 super.onScrolled(recyclerView, dx, dy)
-
                 totalItemCount = layoutManager?.itemCount!!
                 lastVisibleItem = layoutManager?.findLastVisibleItemPosition()!!
                 if (!loading && totalItemCount <= lastVisibleItem + VISIBLE_THRESHOLD) {
