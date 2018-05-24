@@ -3,7 +3,9 @@
 Learn RxKotlin with simple coding examples
 
 
-![GitHub stars](https://img.shields.io/github/stars/badges/shields.svg?style=social&label=Stars)
+![GitHub stars](https://img.shields.io/github/stars/badges/shields.svg?style=social&label=Stars) | 
+[![GitHub followers](https://img.shields.io/github/followers/espadrine.svg?style=social&label=Follow)](https://github.com/AnkitDroidGit)
+
 
 
 # Migration from RxKotlin 1.0 to RxKotlin 2.0
