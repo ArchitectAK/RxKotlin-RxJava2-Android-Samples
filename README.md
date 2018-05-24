@@ -2,6 +2,8 @@
 
 Learn RxKotlin with simple coding examples
 
+[![GitHub stars](https://img.shields.io/github/stars/badges/shields.svg?style=social&label=Stars)](https://github.com/AnkitDroidGit/RxKotlinOperators-Android)
+
 
 # Migration from RxKotlin 1.0 to RxKotlin 2.0
 
